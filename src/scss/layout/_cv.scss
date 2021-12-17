@@ -1,0 +1,10 @@
+// Header section
+
+@use '../base/' as *;
+
+// Changing default typography of last name of name in header
+
+.cv-name-2nd {
+    font-family: $header-name-2nd;
+    color: $primary-accent; 
+}

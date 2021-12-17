@@ -1,0 +1,15 @@
+@use './base' as *;
+
+h1 {
+    font-family: $header-default;
+}
+
+h2, h4 {
+    font-family: $section-title;
+    color: $body-primary;
+}
+
+a, p, ul li, ul li + li {
+    font-family: $body-text;
+    color: $body-primary;
+}
