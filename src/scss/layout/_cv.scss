@@ -2,9 +2,61 @@
 
 @use '../base/' as *;
 
-// Changing default typography of last name of name in header
 
+// This is the name for the cv page 
+
+#id {
+    display: grid;
+    grid-template-areas:    "h   h"
+                            "l   r"
+                            "l   r";
+    background-color: $background-primary;
+    max-width: 60%;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+// Overall Structure of cv grid
+
+.header {
+    grid-area: h;
+    height: fit-content;
+}
+
+.left {
+    grid-area: l;
+}
+
+.right {
+    grid-area: r;
+}
+// Header
+
+// Skills section
+
+.skills-list {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+
+
+
+
+// Changing default typography of last name of name in header
 .cv-name-2nd {
     font-family: $header-name-2nd;
     color: $primary-accent; 
+}
+
+.cv-title {
+    font-variant: small-caps;
+   
+}
+
+.header {
+    margin: 0 1.5em;
+    border-bottom: 1px solid $body-primary;
+
 }

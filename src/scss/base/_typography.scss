@@ -1,15 +1,27 @@
 @use './base' as *;
 
+// Heading fonts types and colours
+
 h1 {
     font-family: $header-default;
 }
 
-h2, h4 {
+h2, h3 {
     font-family: $section-title;
+}
+
+h2 {
     color: $body-primary;
 }
+
+h3 {
+    color: $primary-accent;
+}
+
+// Body default typography styles
 
 a, p, ul li, ul li + li {
     font-family: $body-text;
     color: $body-primary;
+    font-size: 8.5px;
 }
