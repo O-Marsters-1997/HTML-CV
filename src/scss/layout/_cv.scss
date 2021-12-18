@@ -1,62 +1,69 @@
 // Header section
-
 @use '../base/' as *;
+@use '../abstracts/' as *;
 
 
 // This is the name for the cv page 
 
 #id {
     display: grid;
-    grid-template-areas:    "h   h"
-                            "l   r"
-                            "l   r";
+    grid-template-columns: repeat(12, 1fr);
     background-color: $background-primary;
-    max-width: 60%;
-    min-height: 100vh;
+    // max-width: 60%;
+    // min-height: 100vh;
     margin: 0 auto;
 }
 
 // Overall Structure of cv grid
 
 .header {
-    grid-area: h;
+    grid-column: 1 / -1;
     height: fit-content;
 }
 
 .left {
-    grid-area: l;
+    grid-column: 1 / 5;
+    @include border-left-section;
+
 }
 
 .right {
-    grid-area: r;
+    grid-column: 5 / -1;
+    background-color: rgb(218, 218, 218);
 }
 // Header
 
-// Skills section
+// Changing default typography of last name of name in header
 
-.skills-list {
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
+.header {
+    margin: 0 1.5em;
+    border-bottom: 1px solid $body-primary;
 }
 
-
-
-
-
-// Changing default typography of last name of name in header
 .cv-name-2nd {
     font-family: $header-name-2nd;
     color: $primary-accent; 
 }
 
 .cv-title {
-    font-variant: small-caps;
-   
+    font-variant: small-caps;   
 }
 
-.header {
-    margin: 0 1.5em;
-    border-bottom: 1px solid $body-primary;
+// Skills section
 
+.technical-skills-list {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    @include border-bottom-subsection;
+}
+
+.additional-skills-list {
+    @include border-bottom-subsection;
+}
+
+// Education section
+
+.education-dates {
+    font-style: italic;
 }

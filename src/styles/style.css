@@ -25,6 +25,10 @@ h3 {
   color: #909fcf;
 }
 
+h4 {
+  font-family: "Montserrat";
+}
+
 a, p, ul li, ul li + li {
   font-family: "Open-sans-light";
   color: #111111;
@@ -117,30 +121,29 @@ a, p, ul li, ul li + li {
 }
 #id {
   display: grid;
-  grid-template-areas: "h   h" "l   r" "l   r";
+  grid-template-columns: repeat(12, 1fr);
   background-color: white;
-  max-width: 60%;
-  min-height: 100vh;
   margin: 0 auto;
 }
 
 .header {
-  grid-area: h;
+  grid-column: 1/-1;
   height: fit-content;
 }
 
 .left {
-  grid-area: l;
+  grid-column: 1/5;
+  border-right: 1px solid #111111;
 }
 
 .right {
-  grid-area: r;
+  grid-column: 5/-1;
+  background-color: #dadada;
 }
 
-.skills-list {
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
+.header {
+  margin: 0 1.5em;
+  border-bottom: 1px solid #111111;
 }
 
 .cv-name-2nd {
@@ -152,9 +155,19 @@ a, p, ul li, ul li + li {
   font-variant: small-caps;
 }
 
-.header {
-  margin: 0 1.5em;
+.technical-skills-list {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
   border-bottom: 1px solid #111111;
+}
+
+.additional-skills-list {
+  border-bottom: 1px solid #111111;
+}
+
+.education-dates {
+  font-style: italic;
 }
 
 /*# sourceMappingURL=style.css.map */
