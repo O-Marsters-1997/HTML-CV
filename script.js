@@ -1,14 +1,10 @@
-function createPdf () {
-   const element = document.getElementById("id")
-    var opt = {
-        margin:       0,
-        filename:     'OllyMarsters-cv.pdf',
-        image:        { type: 'jpeg', quality: 0.98 },
-        html2canvas:  { scale: 1 },
-        jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
-    };
-   html2pdf()
-   .set(opt)
-   .from(element)
-   .save()
+let element = document.getElementById("id")
+let btn = document.getElementById("btn")
+
+function createPDF () {
+    html2pdf(element)
 }
+
+btn.addEventListener("click", () => {
+    createPDF();
+})
