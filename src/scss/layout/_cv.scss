@@ -67,3 +67,21 @@
 .education-dates {
     font-style: italic;
 }
+
+// Right column
+
+// Profile section
+
+.profile-section {
+    @include border-bottom-subsection;
+}
+
+// Technical qualifications section
+
+.technical-qualifications-section {
+    @include border-bottom-subsection;
+}
+
+.code-clan-project-tech-stack {
+    font-style: italic;
+}

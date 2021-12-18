@@ -6,11 +6,11 @@ h1 {
     font-family: $header-default;
 }
 
-h2, h3 {
+h2, h3, h5 {
     font-family: $section-title;
 }
 
-h2 {
+h2, h5 {
     color: $body-primary;
 }
 

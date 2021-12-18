@@ -13,11 +13,11 @@ h1 {
   font-family: "Montserrat";
 }
 
-h2, h3 {
+h2, h3, h5 {
   font-family: "Montserrat-lighter";
 }
 
-h2 {
+h2, h5 {
   color: #111111;
 }
 
@@ -167,6 +167,18 @@ a, p, ul li, ul li + li {
 }
 
 .education-dates {
+  font-style: italic;
+}
+
+.profile-section {
+  border-bottom: 1px solid #111111;
+}
+
+.technical-qualifications-section {
+  border-bottom: 1px solid #111111;
+}
+
+.code-clan-project-tech-stack {
   font-style: italic;
 }
 
