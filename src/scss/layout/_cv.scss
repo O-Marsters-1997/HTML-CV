@@ -5,16 +5,13 @@
 
 // This is the name for the cv page 
 
-// Class styling for the wrapping of the pdf element
-
-.pdf-wrapper {
-    margin: 10vh;
-}
-
 #id {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     background-color: $background-primary;
+    // max-width: 60%;
+    // min-height: 100vh;
+    margin: 0 auto;
 }
 
 // Overall Structure of cv grid
