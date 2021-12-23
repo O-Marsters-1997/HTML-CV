@@ -173,6 +173,14 @@ a, p, ul li, ul li + li {
   font-style: italic;
 }
 
+@keyframes slidein {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: fit-content;
+  }
+}
 .header {
   position: relative;
   justify-content: start;
@@ -204,6 +212,7 @@ a, p, ul li, ul li + li {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  position: absolute;
   text-align: left;
   margin: 1.1rem 0 0 0;
 }
@@ -234,13 +243,18 @@ a, p, ul li, ul li + li {
 
   .contact-wrapper {
     display: block;
-    position: absolute;
     margin-left: 70%;
     margin-top: 1.75em;
+    text-align: right;
   }
 
   .show-contact-details {
     display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header-max-height {
+    height: 10.457rem;
   }
 }
 
