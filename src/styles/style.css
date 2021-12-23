@@ -209,23 +209,27 @@ a, p, ul li, ul li + li {
 }
 
 .contact-wrapper {
+  opacity: 1;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   position: absolute;
   text-align: left;
   margin: 1.1rem 0 0 0;
+  transition: opacity 450ms ease-in;
 }
 .contact-wrapper ul {
   list-style: none;
 }
 .contact-wrapper ul .contact-item p, .contact-wrapper ul .contact-item a {
+  opacity: 1;
+  transition: opacity 100ms ease-in;
   line-height: 1.55em;
   text-decoration: none;
 }
 
 .contact-hidden {
-  display: none;
+  opacity: 0;
 }
 
 .show-contact-details {
@@ -255,6 +259,7 @@ a, p, ul li, ul li + li {
 @media screen and (max-width: 500px) {
   .header-max-height {
     height: 10.457rem;
+    transition: height 100ms ease-in;
   }
 }
 

@@ -7,16 +7,24 @@
 const contactToggles = document.querySelectorAll(".show-contact-details");
 const contactDetails = document.getElementsByClassName("contact-wrapper")[0]
 const header = document.getElementsByClassName("header")[0]
+const contactLink = document.querySelectorAll(".contact-link")
+
 
 contactToggles.forEach(element =>  {
-element.addEventListener('click', (e) => {
-    if (contactDetails.classList.contains('contact-hidden')){
-        contactDetails.classList.remove('contact-hidden')
-        header.classList.add('header-max-height')
-    } else {
-        contactDetails.classList.add('contact-hidden')
-        header.classList.remove('header-max-height')
-    }
+    element.addEventListener('click', (e) => {
+        if (contactDetails.classList.contains('contact-hidden')){
+            contactDetails.classList.remove('contact-hidden')
+            header.classList.add('header-max-height')
+        } else {
+            contactLink.forEach( element => {
+                element.style.display = "none";
+                setTimeout(() => {
+                    element.style.display = "block";
+                }, 450);
+            })
+            contactDetails.classList.add('contact-hidden')
+            header.classList.remove('header-max-height')
+        }
 });
 });
 
