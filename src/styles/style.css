@@ -136,10 +136,6 @@ a, p, ul li, ul li + li {
   height: fit-content;
 }
 
-.education-dates {
-  font-style: italic;
-}
-
 .profile-section {
   border-bottom: 1px solid #111111;
 }
@@ -281,6 +277,20 @@ a, p, ul li, ul li + li {
 .skills-subtitle {
   padding: 0.5em 0;
   font-size: 0.7em;
+}
+
+@media screen and (min-width: 500px) {
+  .skills-section {
+    grid-column: 1/5;
+  }
+  .skills-section .technical-skills-list, .skills-section .additional-skills-list {
+    column-count: 2;
+  }
+}
+@media screen and (max-width: 400px) {
+  .additional-skills-list {
+    column-count: 2 !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
