@@ -177,6 +177,7 @@ a, p, ul li, ul li + li {
   position: relative;
   justify-content: start;
   margin: 0 1.5em;
+  padding-bottom: 1.25rem;
   border-bottom: 1px solid #111111;
 }
 
@@ -204,7 +205,7 @@ a, p, ul li, ul li + li {
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: left;
-  margin: 1.1rem 0;
+  margin: 1.1rem 0 0 0;
 }
 .contact-wrapper ul {
   list-style: none;
@@ -216,6 +217,10 @@ a, p, ul li, ul li + li {
 
 .contact-hidden {
   display: none;
+}
+
+.show-contact-details {
+  cursor: pointer;
 }
 
 .contact-icon {
@@ -231,6 +236,7 @@ a, p, ul li, ul li + li {
     display: block;
     position: absolute;
     margin-left: 70%;
+    margin-top: 1.75em;
   }
 
   .show-contact-details {
