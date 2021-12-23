@@ -146,6 +146,7 @@ a, p, ul li, ul li + li {
 .section-subtitle {
   padding: 0.5em 0;
   font-size: 0.7em;
+  line-height: 1.5em;
 }
 
 .profile-section {
@@ -297,6 +298,7 @@ a, p, ul li, ul li + li {
 .education-section {
   grid-column: 1/-1;
   margin-left: 1.378rem;
+  max-width: 90%;
   border-bottom: 1px solid #111111;
 }
 .education-section .section-title {
@@ -313,6 +315,12 @@ a, p, ul li, ul li + li {
 
 .education-dates {
   font-style: italic;
+}
+
+@media screen and (min-width: 500px) {
+  .education-section {
+    grid-column: 1/5;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

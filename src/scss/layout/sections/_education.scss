@@ -4,6 +4,7 @@
 .education-section {
     grid-column: 1 / -1;
     margin-left: $ml;
+    max-width: 90%;
     @include border-bottom-subsection;
 
     & .section-title {
@@ -21,4 +22,13 @@
 
 .education-dates {
     font-style: italic;
+}
+
+// Media queries
+
+// For larger screens
+@media screen and (min-width: 500px) {
+    .education-section {
+        grid-column: 1 / 5;
+    }
 }
