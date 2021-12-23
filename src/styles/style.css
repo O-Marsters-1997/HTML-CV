@@ -146,20 +146,6 @@ a, p, ul li, ul li + li {
   background-color: #dadada;
 }
 
-.header {
-  margin: 0 1.5em;
-  border-bottom: 1px solid #111111;
-}
-
-.cv-name-2nd {
-  font-family: "Montserrat-lighter";
-  color: #909fcf;
-}
-
-.cv-title {
-  font-variant: small-caps;
-}
-
 .technical-skills-list {
   columns: 2;
   -webkit-columns: 2;
@@ -185,6 +171,61 @@ a, p, ul li, ul li + li {
 
 .code-clan-project-tech-stack {
   font-style: italic;
+}
+
+.header {
+  position: relative;
+  justify-content: start;
+  margin: 0 1.5em;
+  border-bottom: 1px solid #111111;
+}
+
+.title-wrapper {
+  margin-top: 1.5rem;
+}
+.title-wrapper .cv-name {
+  letter-spacing: 0.22em;
+  font-size: 1.85rem;
+}
+.title-wrapper .cv-title {
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+  font-size: 1.15rem;
+  padding-top: 0.35rem;
+}
+
+.cv-name-2nd {
+  font-family: "Montserrat-lighter";
+  color: #909fcf;
+}
+
+.contact-wrapper {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+  margin: 1.1rem 0;
+}
+.contact-wrapper ul {
+  list-style: none;
+}
+.contact-wrapper ul .contact-item p, .contact-wrapper ul .contact-item a {
+  line-height: 1.55em;
+  text-decoration: none;
+}
+
+.contact-hidden {
+  display: none;
+}
+
+.contact-icon {
+  color: #909fcf;
+}
+
+@media screen and (min-width: 5000px) {
+  .contact-wrapper {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

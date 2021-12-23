@@ -1,0 +1,73 @@
+@use '../base/' as *;
+
+// Header
+
+// Default is for standard phones
+
+.header {
+    position: relative;
+    // display: flex;
+    justify-content: start;
+    margin: 0 1.5em;
+    border-bottom: 1px solid $body-primary;
+}
+
+// Name details
+.title-wrapper {
+    margin-top: 1.5rem;
+
+    & .cv-name {
+        letter-spacing: .22em;
+        font-size: 1.85rem;
+    }
+
+    & .cv-title {
+        font-variant: small-caps;
+        letter-spacing: .1em;
+        font-size: 1.15rem;
+        padding-top: .35rem;
+    }
+}
+
+.cv-name-2nd {
+    font-family: $header-name-2nd;
+    color: $primary-accent; 
+}
+
+//Contact section 
+
+.contact-wrapper {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    // position: absolute;
+    text-align: left;
+    margin: 1.1rem 0;
+
+    & ul {
+        list-style: none;
+    
+        & .contact-item p, .contact-item a {
+            line-height: 1.55em;
+            text-decoration: none;
+        }
+    }
+}
+
+.contact-hidden {
+    display: none;
+}
+
+// Contact icons 
+
+.contact-icon {
+    color: $primary-accent;
+}
+
+// Media Queries
+
+@media screen and (min-width: 5000px) {
+    .contact-wrapper {
+        display: block;
+    }
+}

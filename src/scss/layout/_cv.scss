@@ -36,23 +36,8 @@
     grid-column: 5 / -1;
     background-color: rgb(218, 218, 218);
 }
-// Header
 
-// Changing default typography of last name of name in header
 
-.header {
-    margin: 0 1.5em;
-    border-bottom: 1px solid $body-primary;
-}
-
-.cv-name-2nd {
-    font-family: $header-name-2nd;
-    color: $primary-accent; 
-}
-
-.cv-title {
-    font-variant: small-caps;   
-}
 
 // Skills section
 
