@@ -2,8 +2,10 @@
 @use '../../abstracts/' as *;
 
 .education-section {
+    position: relative;
     grid-column: 1 / -1;
     margin-left: $ml;
+    padding-bottom: .85em;
     max-width: 90%;
     @include border-bottom-subsection;
 

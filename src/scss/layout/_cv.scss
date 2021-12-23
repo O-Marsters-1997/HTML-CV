@@ -19,6 +19,14 @@
     height: auto;
 }
 
+.left {
+    grid-template-columns:  subgrid;
+}
+
+.right {
+    grid-template-columns:  subgrid;
+}
+
 // Overall Structure of cv grid
 
 .header {
