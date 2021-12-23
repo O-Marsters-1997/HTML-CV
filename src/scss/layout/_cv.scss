@@ -16,6 +16,7 @@
     // max-width: 60%;
     // min-height: 100vh;
     margin: 0 auto;
+    height: auto;
 }
 
 // Overall Structure of cv grid
@@ -25,6 +26,17 @@
     height: fit-content;
 }
 
+// Section titles
+
+.section-title, .section-subtitle {
+    font-variant: small-caps;
+    letter-spacing: $section-title-spacing;
+}
+
+.section-subtitle {
+    padding: .5em 0;
+    font-size: $font-size-subtitle
+}
 
 
 // Right column

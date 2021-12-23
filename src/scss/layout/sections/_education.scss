@@ -1,0 +1,24 @@
+@use '../../base/' as *;
+@use '../../abstracts/' as *;
+
+.education-section {
+    grid-column: 1 / -1;
+    margin-left: $ml;
+    @include border-bottom-subsection;
+
+    & .section-title {
+        margin: .65rem 0 .25rem 0;
+    }
+}
+
+.education-section-item .section-subtitle {
+    font-size: .6em;
+}
+
+.education-institution, .education-results {
+    padding-bottom: .6em;
+}
+
+.education-dates {
+    font-style: italic;
+}
