@@ -1,19 +1,15 @@
 // Header section
 // Add event listener on arrow to reveal contact information
 
-// const revealContactDetails = () => {
-// }
+const revealContactDetails = () => {
 
-const contactToggles = document.querySelectorAll(".show-contact-details");
-const contactDetails = document.getElementsByClassName("contact-wrapper")[0]
-const header = document.getElementsByClassName("header")[0]
-const contactLink = document.querySelectorAll(".contact-link")
+    const contactDetails = document.getElementsByClassName("contact-wrapper")[0]
+    const header = document.getElementsByClassName("header")[0]
+    const contactLink = document.querySelectorAll(".contact-link")
 
-
-contactToggles.forEach(element =>  {
-    element.addEventListener('click', (e) => {
-        if (contactDetails.classList.contains('contact-hidden')){
+    if (contactDetails.classList.contains('contact-hidden')){
             contactDetails.classList.remove('contact-hidden')
+            header.classList.add('header-max-height')
             header.classList.add('header-max-height')
         } else {
             contactLink.forEach( element => {
@@ -25,7 +21,12 @@ contactToggles.forEach(element =>  {
             contactDetails.classList.add('contact-hidden')
             header.classList.remove('header-max-height')
         }
-});
+    }
+
+document.querySelectorAll(".show-contact-details").forEach(element =>  {
+    element.addEventListener('click', (e) => {
+        revealContactDetails()  
+    });
 });
 
 

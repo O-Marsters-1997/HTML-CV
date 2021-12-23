@@ -1,7 +1,6 @@
 @use '../base/' as *;
 
 // Header
-
 // Header show animation
 
 @keyframes slidein {
@@ -75,8 +74,15 @@
     opacity: 0;
 }
 
+// Stylings for the show contact details icon
+
 .show-contact-details {
     cursor: pointer;
+    position: absolute;
+}
+
+.show-contact-details-active {
+    color: red !important;
 }
 
 // Contact icons 
@@ -119,6 +125,12 @@
     }
 
     .contact-wrapper {
-        transition: opacity 450ms ease-in;
+        // transition: opacity 450ms ease-in;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .header-max-height {
+        height: 12.457rem;
     }
 }
