@@ -136,27 +136,6 @@ a, p, ul li, ul li + li {
   height: fit-content;
 }
 
-.left {
-  grid-column: 1/5;
-  border-right: 1px solid #111111;
-}
-
-.right {
-  grid-column: 5/-1;
-  background-color: #dadada;
-}
-
-.technical-skills-list {
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
-  border-bottom: 1px solid #111111;
-}
-
-.additional-skills-list {
-  border-bottom: 1px solid #111111;
-}
-
 .education-dates {
   font-style: italic;
 }
@@ -184,7 +163,7 @@ a, p, ul li, ul li + li {
 .header {
   position: relative;
   justify-content: start;
-  margin: 0 1.5em;
+  margin: 0 1.5em 0.71em 1.5em;
   padding-bottom: 1.25rem;
   border-bottom: 1px solid #111111;
 }
@@ -279,6 +258,29 @@ a, p, ul li, ul li + li {
   .header-max-height {
     height: 12.457rem;
   }
+}
+.skills-section {
+  grid-column: 1/-1;
+  margin-left: 1.378rem;
+}
+.skills-section .technical-skills-list, .skills-section .additional-skills-list {
+  column-count: 3;
+  padding-bottom: 0.75em;
+  border-bottom: 1px solid #111111;
+}
+.skills-section .skills-list-item {
+  list-style: none;
+  line-height: 2em;
+}
+
+.skills-title, .skills-subtitle {
+  font-variant: small-caps;
+  letter-spacing: 0.2em;
+}
+
+.skills-subtitle {
+  padding: 0.5em 0;
+  font-size: 0.7em;
 }
 
 /*# sourceMappingURL=style.css.map */

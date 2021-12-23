@@ -16,7 +16,7 @@
 .header {
     position: relative;
     justify-content: start;
-    margin: 0 1.5em;
+    margin: 0 1.5em .71em 1.5em;
     padding-bottom: 1.25rem;
     border-bottom: 1px solid $body-primary;
 }
@@ -97,7 +97,6 @@
 
 // Media Queries
 
-
 // FOr larfer screens
 @media screen and (min-width: 500px) {
     
@@ -126,10 +125,6 @@
     .header-max-height {
         height: 10.457rem;
         transition: height 100ms ease-in;
-    }
-
-    .contact-wrapper {
-        // transition: opacity 450ms ease-in;
     }
 }
 

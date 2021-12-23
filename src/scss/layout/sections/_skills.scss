@@ -1,0 +1,33 @@
+@use '../../base/' as *;
+@use '../../abstracts/' as *;
+
+// Skills section
+
+.skills-section {
+    grid-column: 1 / -1;
+    margin-left: $ml;
+
+    & .technical-skills-list, .additional-skills-list {
+        column-count: 3;
+        padding-bottom: .75em;
+        @include border-bottom-subsection;
+    }
+
+    & .skills-list-item {
+        list-style: none;
+        line-height: 2em;
+    }
+}
+
+
+// Skills titles
+
+.skills-title, .skills-subtitle {
+    font-variant: small-caps;
+    letter-spacing: $section-title-spacing;
+}
+
+.skills-subtitle {
+    padding: .5em 0;
+    font-size: .7em;
+}
