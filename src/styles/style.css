@@ -216,7 +216,6 @@ a, p, ul li, ul li + li {
   position: absolute;
   text-align: left;
   margin: 1.1rem 0 0 0;
-  transition: opacity 450ms ease-in;
 }
 .contact-wrapper ul {
   list-style: none;
@@ -247,6 +246,7 @@ a, p, ul li, ul li + li {
 
   .contact-wrapper {
     display: block;
+    position: absolute;
     margin-left: 70%;
     margin-top: 1.75em;
     text-align: right;
@@ -255,11 +255,19 @@ a, p, ul li, ul li + li {
   .show-contact-details {
     display: none;
   }
+
+  .contact-hidden {
+    opacity: 1 !important;
+  }
 }
 @media screen and (max-width: 500px) {
   .header-max-height {
     height: 10.457rem;
     transition: height 100ms ease-in;
+  }
+
+  .contact-wrapper {
+    transition: opacity 450ms ease-in;
   }
 }
 
