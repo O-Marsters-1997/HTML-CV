@@ -66,8 +66,20 @@
 
 // Media Queries
 
-@media screen and (min-width: 5000px) {
+
+// FOr larfer screens
+@media screen and (min-width: 500px) {
+    
+    .header {
+        display: flex;
+    }
+    
     .contact-wrapper {
         display: block;
+        position: absolute;
+        margin-left: 70%;
+    }
+    .show-contact-details {
+        display: none;
     }
 }

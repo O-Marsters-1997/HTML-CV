@@ -222,9 +222,19 @@ a, p, ul li, ul li + li {
   color: #909fcf;
 }
 
-@media screen and (min-width: 5000px) {
+@media screen and (min-width: 500px) {
+  .header {
+    display: flex;
+  }
+
   .contact-wrapper {
     display: block;
+    position: absolute;
+    margin-left: 70%;
+  }
+
+  .show-contact-details {
+    display: none;
   }
 }
 
