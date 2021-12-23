@@ -4,6 +4,7 @@
 const revealContactDetails = () => {
 
     const contactDetails = document.getElementsByClassName("contact-wrapper")[0]
+    const showContactDetails = document.getElementsByClassName("show-contact-details")[0]
     const header = document.getElementsByClassName("header")[0]
     const contactLink = document.querySelectorAll(".contact-link")
 
@@ -11,6 +12,7 @@ const revealContactDetails = () => {
             contactDetails.classList.remove('contact-hidden')
             header.classList.add('header-max-height')
             header.classList.add('header-max-height')
+            showContactDetails.classList.add('show-contact-details-active')
         } else {
             contactLink.forEach( element => {
                 element.style.display = "none";
@@ -20,6 +22,7 @@ const revealContactDetails = () => {
             })
             contactDetails.classList.add('contact-hidden')
             header.classList.remove('header-max-height')
+            showContactDetails.classList.remove('show-contact-details-active')
         }
     }
 

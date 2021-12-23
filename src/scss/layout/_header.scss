@@ -79,10 +79,14 @@
 .show-contact-details {
     cursor: pointer;
     position: absolute;
+    transform: rotate(0deg);
+    transition: transform 150ms ease-in-out;
 }
 
 .show-contact-details-active {
-    color: red !important;
+    color: $primary-accent;
+    transform: rotate(180deg);
+    transition: transform 150ms ease-in-out;
 }
 
 // Contact icons 

@@ -234,10 +234,14 @@ a, p, ul li, ul li + li {
 .show-contact-details {
   cursor: pointer;
   position: absolute;
+  transform: rotate(0deg);
+  transition: transform 150ms ease-in-out;
 }
 
 .show-contact-details-active {
-  color: red !important;
+  color: #909fcf;
+  transform: rotate(180deg);
+  transition: transform 150ms ease-in-out;
 }
 
 .contact-icon {
