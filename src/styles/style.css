@@ -461,11 +461,28 @@ hr {
   padding-bottom: 0.6em;
 }
 
+.work-experience-title {
+  padding-top: 0.6rem;
+  font-variant: small-caps;
+}
+
+.work-experience-details {
+  text-transform: uppercase;
+  margin: 0.415rem 0;
+}
+
+.work-experience-item .work-experience-description-list {
+  margin-left: 1.378rem;
+}
+.work-experience-item .work-experience-description-list .work-experience-description-item {
+  line-height: 1.5em;
+}
+
 @media screen and (min-width: 500px) {
   .technical-qualifications-section {
     margin-left: 2.756rem;
     grid-column: 5/-1;
-    margin-top: -12.25em;
+    margin-top: -11.75em;
   }
 }
 @media screen and (min-width: 600px) {
