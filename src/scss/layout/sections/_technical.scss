@@ -1,9 +1,16 @@
 @use '../../base/' as *;
+@use '../../abstracts/' as *;
+
+// Technical qualifications section
 
 .technical-qualifications-section {
     margin-left: $ml;
     margin-right: $ml;
     grid-column: 1 / -1;
+
+    & .code-clan-projects-section {
+        @include border-bottom-subsection;
+    }
 
     & .section-title {
         margin-top: .6rem;
@@ -17,25 +24,42 @@
         text-transform: capitalize;
         padding-bottom: .6em;
         letter-spacing: .1em;
-    }
-}
-
-.code-clan-project-item {
-
-    position: relative;
-
-    & .code-clan-project-github-link {
-        color: var(--primary-accent);
-        text-decoration: none;
+        font-size: $experience-item-title;
+        padding-bottom: .8rem;
     }
 }
 
 .code-clan-project-item-wrapper {
-
     & .code-clan-project-tech-stack {
         padding-bottom: .6em;
     }
+    & .code-clan-project-description-list {
+        margin-left: $ml;
+        margin-right: $mr /2;
+    
+        & .code-clan-project-description-item {
+            line-height: $body-lh;
+        }
+    }
 }
+
+.code-clan-project-item {
+    position: relative;
+    padding-bottom: 1.2rem;
+
+    & .code-clan-project-github-link {
+        color: var(--primary-accent);
+        text-decoration: none;
+        font-size: $github-project-link;
+        font-style: italic;
+    }
+}
+
+#code-clan-project-padding-overide {
+    padding-bottom: .6em;
+}
+
+
 
 // Media Queries
 // For large screens
@@ -47,11 +71,12 @@
         grid-column: 5 / -1;
         margin-top: -12.25em;
     }
+}
 
-    .code-clan-project-github-link {
-        // position: absolute;
-        // top: 0;
-        // right: 0;
+@media screen and (min-width: 600px) {
+     .code-clan-project-github-link {
+        position: absolute;
+        top: 0;
+        right: 0;
     }
-
 }

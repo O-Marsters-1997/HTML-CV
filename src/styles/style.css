@@ -418,6 +418,9 @@ hr {
   margin-right: 1.378rem;
   grid-column: 1/-1;
 }
+.technical-qualifications-section .code-clan-projects-section {
+  border-bottom: 0.1px solid var(--body-primary);
+}
 .technical-qualifications-section .section-title {
   margin-top: 0.6rem;
 }
@@ -428,17 +431,33 @@ hr {
   text-transform: capitalize;
   padding-bottom: 0.6em;
   letter-spacing: 0.1em;
+  font-size: 0.5em;
+  padding-bottom: 0.8rem;
+}
+
+.code-clan-project-item-wrapper .code-clan-project-tech-stack {
+  padding-bottom: 0.6em;
+}
+.code-clan-project-item-wrapper .code-clan-project-description-list {
+  margin-left: 1.378rem;
+  margin-right: 0.689rem;
+}
+.code-clan-project-item-wrapper .code-clan-project-description-list .code-clan-project-description-item {
+  line-height: 1.5em;
 }
 
 .code-clan-project-item {
   position: relative;
+  padding-bottom: 1.2rem;
 }
 .code-clan-project-item .code-clan-project-github-link {
   color: var(--primary-accent);
   text-decoration: none;
+  font-size: 0.4em;
+  font-style: italic;
 }
 
-.code-clan-project-item-wrapper .code-clan-project-tech-stack {
+#code-clan-project-padding-overide {
   padding-bottom: 0.6em;
 }
 
@@ -447,6 +466,13 @@ hr {
     margin-left: 2.756rem;
     grid-column: 5/-1;
     margin-top: -12.25em;
+  }
+}
+@media screen and (min-width: 600px) {
+  .code-clan-project-github-link {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 
