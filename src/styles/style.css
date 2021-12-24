@@ -293,6 +293,14 @@ a, p, ul li, ul li + li {
   color: var(--primary-accent);
 }
 
+#resume-button {
+  display: none;
+}
+
+#resume-button-small {
+  display: inline-block;
+}
+
 @media screen and (min-width: 500px) {
   .header {
     display: flex;
@@ -320,6 +328,14 @@ a, p, ul li, ul li + li {
   .header-icon-wrapper-extra i {
     color: var(--body-primary) !important;
   }
+
+  #resume-button {
+    display: inline-block;
+  }
+
+  #resume-button-small {
+    display: none;
+  }
 }
 @media screen and (max-width: 525px) {
   .contact-wrapper {
@@ -330,6 +346,10 @@ a, p, ul li, ul li + li {
   .header-max-height {
     height: 10.457rem;
     transition: height 100ms ease-in;
+  }
+
+  .contact-wrapper {
+    margin-left: 0%;
   }
 }
 @media screen and (max-width: 370px) {

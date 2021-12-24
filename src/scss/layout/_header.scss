@@ -113,8 +113,6 @@
       & i {
         color: var(--primary-accent) !important;
     }
-
-
 }
 
 .header-icon {
@@ -125,9 +123,18 @@
     color: var(--primary-accent);
 }
 
-// Media Queries
+// Toggling effect on replacing which download icon is actually visible
 
-// FOr larfer screens
+#resume-button {
+    display: none;
+}
+
+#resume-button-small {
+    display: inline-block;
+}
+
+// Media Queries
+// For larger screens
 @media screen and (min-width: 500px) {
     
     .header {
@@ -151,13 +158,20 @@
     }
 
     .header-icon-wrapper-extra {
-    top: 80% !important;
-    // margin-left: 80%;
-    // Overide for extra padding
-      & i {
-        color: var(--body-primary) !important;
+        top: 80% !important;
+        // margin-left: 80%;
+        // Overide for extra padding
+        & i {
+            color: var(--body-primary) !important;
+        }
     }
-}
+    #resume-button {
+        display: inline-block;
+    }
+
+    #resume-button-small {
+        display: none;
+    }
 }
 
 @media screen and (max-width:525px) {
@@ -171,13 +185,15 @@
         height: 10.457rem;
         transition: height 100ms ease-in;
     }
+    .contact-wrapper {
+        margin-left: 0%;
+    }
 }
 
 @media screen and (max-width: 370px) {
     .header-max-height {
         height: 12.457rem;
     }
-
     .header-icon-wrapper {
         top: 100% !important;
     }
