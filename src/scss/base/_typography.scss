@@ -10,7 +10,7 @@ h2, h3, h5 {
     font-family: $section-title;
 }
 
-h2, h5 {
+h2, h5, i {
     color: var(--body-primary);
 }
 
@@ -34,3 +34,4 @@ a, p, ul li, ul li + li {
     color: var(--body-primary);
     font-size: 8.5px;
 }
+

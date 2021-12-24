@@ -7,12 +7,14 @@ const revealContactDetails = () => {
     const showContactDetails = document.getElementsByClassName("show-contact-details")[0]
     const header = document.getElementsByClassName("header")[0]
     const contactLink = document.querySelectorAll(".contact-link")
+    const iconWrap = document.getElementById("header-icon-wrapper")
 
     if (contactDetails.classList.contains('contact-hidden')){
             contactDetails.classList.remove('contact-hidden')
             header.classList.add('header-max-height')
             header.classList.add('header-max-height')
             showContactDetails.classList.add('show-contact-details-active')
+            iconWrap.classList.add("header-icon-wrapper-extra");
         } else {
             contactLink.forEach( element => {
                 element.style.display = "none";
@@ -23,6 +25,7 @@ const revealContactDetails = () => {
             contactDetails.classList.add('contact-hidden')
             header.classList.remove('header-max-height')
             showContactDetails.classList.remove('show-contact-details-active')
+            iconWrap.classList.remove("header-icon-wrapper-extra");
         }
     }
 
