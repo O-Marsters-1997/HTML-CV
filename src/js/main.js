@@ -33,8 +33,6 @@ document.querySelectorAll(".show-contact-details").forEach(element =>  {
 });
 
 
-
-
 /*==================== GENERATE PDF ====================*/ 
 // PDF generated area
 
@@ -63,3 +61,7 @@ resumeButton.addEventListener('click', () => {
 
     // 3. The .scale-cv class is removed from the body after 5 seconds to return to normal size.
 })
+
+
+
+

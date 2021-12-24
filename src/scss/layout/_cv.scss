@@ -12,12 +12,16 @@
 #id {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    background-color: $background-primary;
+    grid-template-rows: repeat(auto, 1fr);
+    grid-auto-flow: dense;
+    // grid-auto-rows: 100px;
+    background-color: var(--background-primary);
     // max-width: 60%;
     // min-height: 100vh;
     margin: 0 auto;
     height: auto;
 }
+
 
 .left {
     grid-template-columns:  subgrid;
@@ -45,6 +49,7 @@
     padding: .5em 0;
     font-size: $font-size-subtitle;
     line-height: $section-title-lh;
+    color: var(--body-primary);
 }
 
 
@@ -64,4 +69,13 @@
 
 .code-clan-project-tech-stack {
     font-style: italic;
+}
+
+// Media queries
+// For larger screens
+
+@media screen and (min-width: 500px) {
+    #id {
+    
+    }
 }

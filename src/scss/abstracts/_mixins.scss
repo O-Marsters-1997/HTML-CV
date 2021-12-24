@@ -2,10 +2,10 @@
 
 // Mixin for bottom borders
 @mixin border-bottom-subsection {
-    border-bottom: 1px solid $body-primary;
+    border-bottom: .1px solid var(--body-primary);
 }
 
 // Mixin for left border
 @mixin border-left-section {
-    border-right: 1px solid $body-primary;
+    border-right: 1px solid var(--body-primary);
 }

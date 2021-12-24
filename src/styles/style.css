@@ -9,6 +9,12 @@ body {
   background-color: #2e2b2b;
 }
 
+hr {
+  border: none;
+  height: 0.1px !important;
+  background-color: var(--body-primary);
+}
+
 h1 {
   font-family: "Montserrat";
 }
@@ -18,11 +24,11 @@ h2, h3, h5 {
 }
 
 h2, h5 {
-  color: #111111;
+  color: var(--body-primary);
 }
 
 h3 {
-  color: #909fcf;
+  color: var(--primary-accent);
   font-variant: small-caps;
 }
 
@@ -30,9 +36,13 @@ h4 {
   font-family: "Montserrat";
 }
 
+h5 {
+  font-size: 0.6em;
+}
+
 a, p, ul li, ul li + li {
   font-family: "Open-sans-light";
-  color: #111111;
+  color: var(--body-primary);
   font-size: 8.5px;
 }
 
@@ -120,6 +130,20 @@ a, p, ul li, ul li + li {
   font-weight: normal;
   src: url("../fonts/open-sans-v27-latin-italic.woff2") format("woff2"), url("../fonts/open-sans-v27-latin-italic.woff") format("woff"), url("../fonts/open-sans-v27-latin-italic.ttf") format("truetype");
 }
+:root {
+  --background-primary: white;
+  --primary-accent: #909fcf;
+  --header-primary: black;
+  --body-primary: #111111;
+}
+
+.dark-theme {
+  --background-primary: black;
+  --primary-accent: #eba834;
+  --header-primary: white;
+  --body-primary: white;
+}
+
 .pdf-wrapper {
   margin: 0 auto;
   max-width: min(600px, 90%);
@@ -128,7 +152,9 @@ a, p, ul li, ul li + li {
 #id {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  background-color: white;
+  grid-template-rows: repeat(auto, 1fr);
+  grid-auto-flow: dense;
+  background-color: var(--background-primary);
   margin: 0 auto;
   height: auto;
 }
@@ -155,14 +181,15 @@ a, p, ul li, ul li + li {
   padding: 0.5em 0;
   font-size: 0.7em;
   line-height: 1.5em;
+  color: var(--body-primary);
 }
 
 .profile-section {
-  border-bottom: 1px solid #111111;
+  border-bottom: 0.1px solid var(--body-primary);
 }
 
 .technical-qualifications-section {
-  border-bottom: 1px solid #111111;
+  border-bottom: 0.1px solid var(--body-primary);
 }
 
 .code-clan-project-tech-stack {
@@ -182,7 +209,7 @@ a, p, ul li, ul li + li {
   justify-content: start;
   margin: 0 1.5em 0.71em 1.5em;
   padding-bottom: 1.25rem;
-  border-bottom: 1px solid #111111;
+  border-bottom: 1px solid var(--body-primary);
 }
 
 .title-wrapper {
@@ -199,9 +226,13 @@ a, p, ul li, ul li + li {
   padding-top: 0.35rem;
 }
 
+.cv-name-1st {
+  color: var(--body-primary);
+}
+
 .cv-name-2nd {
   font-family: "Montserrat-lighter";
-  color: #909fcf;
+  color: var(--primary-accent);
 }
 
 .contact-wrapper {
@@ -235,13 +266,13 @@ a, p, ul li, ul li + li {
 }
 
 .show-contact-details-active {
-  color: #909fcf;
+  color: var(--primary-accent);
   transform: rotate(180deg);
   transition: transform 150ms ease-in-out;
 }
 
 .contact-icon {
-  color: #909fcf;
+  color: var(--primary-accent);
 }
 
 @media screen and (min-width: 500px) {
@@ -287,7 +318,7 @@ a, p, ul li, ul li + li {
 .skills-section .technical-skills-list, .skills-section .additional-skills-list {
   column-count: 3;
   padding-bottom: 0.75em;
-  border-bottom: 1px solid #111111;
+  border-bottom: 0.1px solid var(--body-primary);
 }
 .skills-section .skills-list-item {
   list-style: none;
@@ -306,7 +337,7 @@ a, p, ul li, ul li + li {
     position: absolute;
     width: 190px;
     height: 100%;
-    border-right: 1px solid #111111;
+    border-right: 1px solid var(--body-primary);
   }
 
   .left-border-end {
@@ -329,7 +360,7 @@ a, p, ul li, ul li + li {
   margin-left: 1.378rem;
   padding-bottom: 0.85em;
   max-width: 90%;
-  border-bottom: 1px solid #111111;
+  border-bottom: 0.1px solid var(--body-primary);
 }
 .education-section .section-title {
   margin: 0.65rem 0 0.25rem 0;
@@ -358,18 +389,64 @@ a, p, ul li, ul li + li {
   padding-bottom: 0.85em;
   margin-left: 1.378rem;
   margin-right: 1.378rem;
+  border: none;
 }
 .profile-section .section-title {
   margin: 0 0 0.25rem 0;
+  padding-top: 0.6em;
 }
 .profile-section .profile-description {
   line-height: 1.5em;
+}
+.profile-section hr {
+  margin-top: 0.5em;
+}
+
+hr {
+  margin-top: 200px;
 }
 
 @media screen and (min-width: 500px) {
   .profile-section {
     grid-column: 6/-1;
-    margin-left: -1.5em;
+    margin-left: 0;
+    padding-bottom: -18em;
+  }
+}
+.technical-qualifications-section {
+  margin-left: 1.378rem;
+  margin-right: 1.378rem;
+  grid-column: 1/-1;
+}
+.technical-qualifications-section .section-title {
+  margin-top: 0.6rem;
+}
+.technical-qualifications-section .code-clan-description {
+  line-height: 1.5em;
+}
+.technical-qualifications-section .code-clan-project-title {
+  text-transform: capitalize;
+  padding-bottom: 0.6em;
+  letter-spacing: 0.1em;
+}
+
+.code-clan-project-item {
+  position: relative;
+}
+.code-clan-project-item .code-clan-project-github-link {
+  color: var(--primary-accent);
+  text-decoration: none;
+}
+
+.code-clan-project-item-wrapper .code-clan-project-tech-stack {
+  padding-bottom: 0.6em;
+}
+
+@media screen and (min-width: 500px) {
+  .technical-qualifications-section {
+    margin-left: 2.756rem;
+    grid-column: 5/-1;
+    margin-top: -12.25em;
   }
 }
 

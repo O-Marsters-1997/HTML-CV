@@ -7,14 +7,24 @@
     padding-bottom: .85em;
     margin-left: $ml;
     margin-right: $mr;
+    border: none;
 
     & .section-title {
        margin: 0 0 .25rem 0;
+       padding-top: .6em;
     }
 
     & .profile-description {
         line-height: $body-lh;
     } 
+
+    & hr {
+        margin-top: .5em;
+    }
+}
+
+hr {
+    margin-top: 200px;
 }
 
 // Media queries
@@ -23,6 +33,8 @@
 @media screen and (min-width: 500px) {
     .profile-section {
         grid-column: 6 / -1;
-        margin-left: -1.5em;
+        margin-left: 0;
+        padding-bottom: -18em;
     }
 }
+

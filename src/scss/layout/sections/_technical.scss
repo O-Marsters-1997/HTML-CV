@@ -1,0 +1,57 @@
+@use '../../base/' as *;
+
+.technical-qualifications-section {
+    margin-left: $ml;
+    margin-right: $ml;
+    grid-column: 1 / -1;
+
+    & .section-title {
+        margin-top: .6rem;
+    }
+
+    & .code-clan-description {
+        line-height: $body-lh;
+    }
+
+    & .code-clan-project-title {
+        text-transform: capitalize;
+        padding-bottom: .6em;
+        letter-spacing: .1em;
+    }
+}
+
+.code-clan-project-item {
+
+    position: relative;
+
+    & .code-clan-project-github-link {
+        color: var(--primary-accent);
+        text-decoration: none;
+    }
+}
+
+.code-clan-project-item-wrapper {
+
+    & .code-clan-project-tech-stack {
+        padding-bottom: .6em;
+    }
+}
+
+// Media Queries
+// For large screens
+
+@media screen and (min-width: 500px) {
+
+    .technical-qualifications-section {
+        margin-left: $ml * 2;
+        grid-column: 5 / -1;
+        margin-top: -12.25em;
+    }
+
+    .code-clan-project-github-link {
+        // position: absolute;
+        // top: 0;
+        // right: 0;
+    }
+
+}

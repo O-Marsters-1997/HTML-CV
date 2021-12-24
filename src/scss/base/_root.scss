@@ -1,0 +1,15 @@
+@use './base' as *;
+
+:root {
+    --background-primary: #{$background-primary};
+    --primary-accent: #{$primary-accent};
+    --header-primary: #{$header-primary};
+    --body-primary: #{$body-primary};
+}
+
+.dark-theme {
+    --background-primary: #{$background-primary-dark};
+    --primary-accent: #{$primary-accent-dark};
+    --header-primary: #{$header-primary-dark};
+    --body-primary: #{$body-primary-dark};
+}

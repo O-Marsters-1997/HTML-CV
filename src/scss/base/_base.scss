@@ -6,6 +6,10 @@ $background-primary: white;
 $primary-accent: rgba(144, 159, 207, 1);
 $header-primary: black;
 $body-primary: rgba(17, 17, 17, 1);
+$background-primary-dark: black;
+$primary-accent-dark: rgb(235, 168, 52);
+$header-primary-dark: white;
+$body-primary-dark: white;
 
 // Typography
 $header-default: "Montserrat";
@@ -19,6 +23,7 @@ $body-text: "Open-sans-light";
 
 // Font-sizes
 $font-size-subtitle: .7em;
+$font-size-sub-alt: .6em;
 
 
 // Spacings
@@ -29,4 +34,3 @@ $body-lh: 1.5em;
 // Margins
 $ml: 1.378rem;
 $mr: 1.378rem;
-

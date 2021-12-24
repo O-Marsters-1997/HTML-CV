@@ -18,7 +18,7 @@
     justify-content: start;
     margin: 0 1.5em .71em 1.5em;
     padding-bottom: 1.25rem;
-    border-bottom: 1px solid $body-primary;
+    border-bottom: 1px solid var(--body-primary);
 }
 
 // Name details
@@ -38,9 +38,13 @@
     }
 }
 
+.cv-name-1st {
+    color: var(--body-primary);
+}
+
 .cv-name-2nd {
     font-family: $header-name-2nd;
-    color: $primary-accent; 
+    color: var(--primary-accent); 
 }
 
 //Contact section 
@@ -84,7 +88,7 @@
 }
 
 .show-contact-details-active {
-    color: $primary-accent;
+    color: var(--primary-accent);
     transform: rotate(180deg);
     transition: transform 150ms ease-in-out;
 }
@@ -92,7 +96,7 @@
 // Contact icons 
 
 .contact-icon {
-    color: $primary-accent;
+    color: var(--primary-accent);
 }
 
 // Media Queries
