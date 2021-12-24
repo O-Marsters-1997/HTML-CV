@@ -132,7 +132,7 @@ a, p, ul li, ul li + li {
 }
 :root {
   --background-primary: white;
-  --primary-accent: #909fcf;
+  --primary-accent: #8e9fcf;
   --header-primary: black;
   --body-primary: #111111;
 }
@@ -282,7 +282,7 @@ a, p, ul li, ul li + li {
   top: 90% !important;
 }
 .header-icon-wrapper-extra i {
-  color: var(--primary-accent);
+  color: var(--primary-accent) !important;
 }
 
 .header-icon {
@@ -318,7 +318,7 @@ a, p, ul li, ul li + li {
     top: 80% !important;
   }
   .header-icon-wrapper-extra i {
-    color: var(--body-primary);
+    color: var(--body-primary) !important;
   }
 }
 @media screen and (max-width: 500px) {

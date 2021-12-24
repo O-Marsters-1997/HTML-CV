@@ -111,8 +111,10 @@
     // margin-left: 80%;
     // Overide for extra padding
       & i {
-        color: var(--primary-accent);
+        color: var(--primary-accent) !important;
     }
+
+
 }
 
 .header-icon {
@@ -153,7 +155,7 @@
     // margin-left: 80%;
     // Overide for extra padding
       & i {
-        color: var(--body-primary);
+        color: var(--body-primary) !important;
     }
 }
 }
