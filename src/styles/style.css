@@ -546,9 +546,12 @@ hr {
   width: 100%;
   height: 100%;
 }
-.pop-up-index-section i {
+.pop-up-index-section i#pop-up-index-button {
+  position: absolute;
+  margin-top: -5vh;
+  margin-left: 90%;
   transform: rotate(0deg);
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .pop-up-index-wrapper {
@@ -589,7 +592,7 @@ hr {
 .pop-up-index-button-active {
   color: var(--primary-accent);
   transform: rotate(180deg) translateY(20px) !important;
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 @media screen and (min-width: 500px) {

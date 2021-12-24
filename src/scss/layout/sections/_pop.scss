@@ -13,9 +13,12 @@
     height: 100%;
     // transition: opacity 0.4s ease-in-out;
 
-    & i {
+    & i#pop-up-index-button {
+        position: absolute;
+        margin-top: -5vh;
+        margin-left: 90%;
         transform: rotate(0deg);
-        transition: transform .4s ease-in-out;
+        transition: transform .2s ease-in-out;
     }
 }
 
@@ -68,7 +71,7 @@
     color: var(--primary-accent);
     transform: rotate(180deg) translateY(20px) !important;
     // overwrite of style of icon above
-    transition: transform .4s ease-in-out;
+    transition: transform .2s ease-in-out;
 }
 
 // Media queries
