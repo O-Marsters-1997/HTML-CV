@@ -33,6 +33,26 @@ document.querySelectorAll(".show-contact-details").forEach(element =>  {
 });
 
 
+
+
+// Footer section
+// Add event listner to show pop up index section
+
+const revealPopUpSection = () => {
+    const btn = document.getElementById("pop-up-index-button");
+    const pop = document.querySelector(".pop-up-index-wrapper");
+    if (pop.classList.contains("pop-up-index-invisible")) {
+        pop.classList.remove("pop-up-index-invisible")
+        btn.classList.add("pop-up-index-button-active");
+    } else {
+        pop.classList.add("pop-up-index-invisible")
+        btn.classList.remove("pop-up-index-button-active");
+    };
+}
+document.querySelector("#pop-up-index-button").addEventListener('click', (e) => {
+    revealPopUpSection()
+})
+
 /*==================== GENERATE PDF ====================*/ 
 // PDF generated area
 

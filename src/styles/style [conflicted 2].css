@@ -524,33 +524,10 @@ hr {
 
 .interests-item i {
   color: var(--primary-accent);
-  font-size: 1.4em;
 }
 
-#cooking i:first-child {
-  transform: rotate(-45deg);
-}
-
-#cooking i:nth-child(2) {
-  transform: translateX(-7px) translateY(1px) rotate(-45deg);
-}
-
-.pop-up-index-invisible {
-  opacity: 0;
-}
-
-.pop-up-index-section {
-  grid-column: 1/-1;
-}
-.pop-up-index-section i {
-  transform: rotate(0deg);
-  transition: transform 0.4s ease-in-out;
-}
-
-.pop-up-index-button-active {
-  color: var(--primary-accent);
-  transform: rotate(180deg) !important;
-  transition: transform 0.4s ease-in-out;
+#foraging i:nth-child(2) {
+  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

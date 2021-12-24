@@ -1,0 +1,22 @@
+@use '../../base/' as *;
+
+.pop-up-index-invisible {
+    opacity: 0;
+}
+
+.pop-up-index-section {
+    grid-column: 1 / -1;
+
+    & i {
+        transform: rotate(0deg);
+        transition: transform .4s ease-in-out;
+    }
+}
+
+// Icons
+.pop-up-index-button-active {
+    color: var(--primary-accent);
+    transform: rotate(180deg)  !important;
+    // overwrite of style of icon above
+    transition: transform .4s ease-in-out;
+}
