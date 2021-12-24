@@ -2,10 +2,16 @@
 
 .pop-up-index-invisible {
     opacity: 0;
+    // transition: opacity 0.4s ease-in-out;
 }
 
 .pop-up-index-section {
     grid-column: 1 / -1;
+    opacity: 1;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    // transition: opacity 0.4s ease-in-out;
 
     & i {
         transform: rotate(0deg);
@@ -13,10 +19,63 @@
     }
 }
 
+.pop-up-index-wrapper {
+    position: sticky;
+    width: 100%;
+    // margin-left: 90%;
+    height: 15vh;
+    background-color: var(--background-primary);
+    margin-top: -15vh;
+
+    & .pop-up-index-nav {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        & .pop-up-index-list {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            
+
+            & .pop-up-index-item {
+                list-style: none;
+                grid-column: auto / span 4;
+                text-align: center;
+                align-self: center;
+            
+                & a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+
 // Icons
+
+#pop-up-index-button {
+    position: absolute;
+    height: 100%;
+    z-index: 100;
+    // transform: translateY(-20px);
+}
+
 .pop-up-index-button-active {
     color: var(--primary-accent);
-    transform: rotate(180deg)  !important;
+    transform: rotate(180deg) translateY(20px) !important;
     // overwrite of style of icon above
     transition: transform .4s ease-in-out;
+}
+
+// Media queries
+// For larger screens
+
+@media screen and (min-width: 500px) {
+    .pop-up-index-section {
+        display: none;
+    }
 }
