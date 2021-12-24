@@ -321,6 +321,11 @@ a, p, ul li, ul li + li {
     color: var(--body-primary) !important;
   }
 }
+@media screen and (max-width: 525px) {
+  .contact-wrapper {
+    margin-left: 65%;
+  }
+}
 @media screen and (max-width: 500px) {
   .header-max-height {
     height: 10.457rem;
