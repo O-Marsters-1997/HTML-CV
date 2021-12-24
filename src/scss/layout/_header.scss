@@ -15,6 +15,8 @@
 
 .header {
     position: relative;
+    height: 100%;
+    // width: 100%;
     justify-content: start;
     margin: 0 1.5em .71em 1.5em;
     padding-bottom: 1.25rem;
@@ -94,6 +96,16 @@
 }
 
 // Contact icons 
+
+.header-icon-wrapper {
+    position: absolute;
+    height: fit-content;
+    top: 80%;
+}
+
+.header-icon {
+    color: var(--body-primary);
+}
 
 .contact-icon {
     color: var(--primary-accent);

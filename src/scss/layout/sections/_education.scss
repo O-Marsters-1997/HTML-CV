@@ -34,3 +34,11 @@
         grid-column: 1 / 5;
     }
 }
+
+// For smaller screens 
+
+@media screen and (max-width: 500px) {
+    .education-section {
+        grid-row: 5;
+    }
+}
