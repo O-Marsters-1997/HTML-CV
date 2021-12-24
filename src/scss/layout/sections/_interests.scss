@@ -1,0 +1,29 @@
+@use '../../base/' as *;
+
+.interests-section {
+    & .section-title {
+        padding-bottom: .3rem;
+    }
+
+    & .interests-list {
+        list-style: none;
+
+        & .interests-item {
+            line-height: $body-lh * 1.5;
+        }
+    }
+}
+
+.interests-item i {
+    color: var(--primary-accent);
+    font-size: 1.4em;
+}
+
+#cooking i:first-child {
+    transform: rotate(-45deg);
+}
+
+#cooking i:nth-child(2) {
+    transform: translateX(-7px) translateY(1px) rotate(-45deg);
+    // transform: translateX/(-5px);
+}

@@ -1,13 +1,17 @@
 @use '../../base/' as *;
 @use '../../abstracts/' as *;
 
-.education-section {
+.education-interests-section {
     position: relative;
     grid-column: 1 / -1;
     margin-left: $ml;
     padding-bottom: .85em;
     max-width: 90%;
-    @include border-bottom-subsection;
+    
+    & .education-section {
+        padding-bottom: 1rem;
+        @include border-bottom-subsection;
+    }
 
     & .section-title {
         margin: .65rem 0 .25rem 0;
@@ -30,7 +34,7 @@
 
 // For larger screens
 @media screen and (min-width: 500px) {
-    .education-section {
+    .education-interests-section {
         grid-column: 1 / 5;
     }
 }
@@ -38,7 +42,7 @@
 // For smaller screens 
 
 @media screen and (max-width: 500px) {
-    .education-section {
+    .education-interests-section {
         grid-row: 5;
     }
 }

@@ -354,6 +354,10 @@ a, p, ul li, ul li + li {
   }
 }
 @media screen and (max-width: 400px) {
+  .skills-section {
+    margin-top: 0.65rem;
+  }
+
   .additional-skills-list {
     column-count: 2 !important;
   }
@@ -363,18 +367,15 @@ a, p, ul li, ul li + li {
     border: none;
   }
 }
-.education-interests-section {
+.education-section {
   position: relative;
   grid-column: 1/-1;
   margin-left: 1.378rem;
   padding-bottom: 0.85em;
   max-width: 90%;
-}
-.education-interests-section .education-section {
-  padding-bottom: 1rem;
   border-bottom: 0.1px solid var(--body-primary);
 }
-.education-interests-section .section-title {
+.education-section .section-title {
   margin: 0.65rem 0 0.25rem 0;
 }
 
@@ -391,12 +392,12 @@ a, p, ul li, ul li + li {
 }
 
 @media screen and (min-width: 500px) {
-  .education-interests-section {
+  .education-section {
     grid-column: 1/5;
   }
 }
 @media screen and (max-width: 500px) {
-  .education-interests-section {
+  .education-section {
     grid-row: 5;
   }
 }
@@ -407,7 +408,6 @@ a, p, ul li, ul li + li {
   margin-left: 1.378rem;
   margin-right: 1.378rem;
   border: none;
-  padding: 0;
 }
 .profile-section .section-title {
   margin: 0 0 0.25rem 0;
@@ -511,28 +511,6 @@ hr {
     top: 0;
     right: 0;
   }
-}
-.interests-section .section-title {
-  padding-bottom: 0.3rem;
-}
-.interests-section .interests-list {
-  list-style: none;
-}
-.interests-section .interests-list .interests-item {
-  line-height: 2.25em;
-}
-
-.interests-item i {
-  color: var(--primary-accent);
-  font-size: 1.4em;
-}
-
-#cooking i:first-child {
-  transform: rotate(-45deg);
-}
-
-#cooking i:nth-child(2) {
-  transform: translateX(-7px) translateY(1px) rotate(-45deg);
 }
 
 /*# sourceMappingURL=style.css.map */
