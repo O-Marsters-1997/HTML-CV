@@ -56,6 +56,20 @@ document.querySelector("#pop-up-index-button").addEventListener('click', (e) => 
     revealPopUpSection()
 })
 
+
+/*==================== DOWNLOAD PDF ON SMALL SCREEN ====================*/ 
+
+// const anchor = document.getElementById("resume-button-small");
+
+// const pdfDownload = (path, filename) => {
+//     anchor.href = path
+//     anchor.download = filename
+// }
+
+// anchor.addEventListener('click', (e) => {
+//     pdfDownload('../olly.pdf', 'olly.pdf')
+// })
+
 /*==================== GENERATE PDF ====================*/ 
 // PDF generated area
 
@@ -66,7 +80,6 @@ let resumeButton = document.getElementById("resume-button")
 
 // Html2pdf options
 
-
 // Function to call areaCv and Html2Pdf options 
 function generateResume() {
     html2pdf(areaCv)
@@ -74,8 +87,6 @@ function generateResume() {
 
 // When the button is clicked, it executes the three functions
 resumeButton.addEventListener('click', () => {
-
-
     // 1. The class .scale-cv is added to the body, where it reduces the size of the elements
     // scaleCV()
 
