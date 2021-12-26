@@ -33,6 +33,15 @@
     & .left-border-wrapper {
         width: 250px;
     }
+    // Header section
+
+    & .header-icon-wrapper {
+        display: none;
+    }
+
+    & .link-to-live-project {
+        display: block;
+    }
 
     // Profile section
     & .profile-section {

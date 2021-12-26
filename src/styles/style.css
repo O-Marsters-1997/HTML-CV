@@ -238,6 +238,12 @@ i {
 .scale-cv .left-border-wrapper {
   width: 250px;
 }
+.scale-cv .header-icon-wrapper {
+  display: none;
+}
+.scale-cv .link-to-live-project {
+  display: block;
+}
 .scale-cv .profile-section {
   margin-left: -1.378rem;
   margin-top: -0.2368em;
@@ -369,6 +375,36 @@ i {
 
 #resume-button-small {
   display: inline-block;
+}
+
+.link-to-live-project {
+  text-decoration: none;
+  display: none;
+  position: absolute;
+  top: 77.5%;
+}
+.link-to-live-project h5 {
+  color: var(--body-primary);
+  font-size: var(--font-size-subtitle);
+  letter-spacing: 0.1em;
+  transition: color 0.35s ease-in-out;
+}
+.link-to-live-project h5:hover {
+  color: var(--primary-accent);
+}
+.link-to-live-project .pop-up-link-underline {
+  position: absolute;
+  top: 135%;
+  left: 0%;
+  width: 0%;
+  color: red;
+  height: 1px;
+  background-color: var(--primary-accent);
+  transition: width 0.75s ease-in-out;
+}
+
+.link-to-live-project:hover .pop-up-link-underline {
+  width: 100%;
 }
 
 @media screen and (min-width: 500px) {

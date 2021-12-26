@@ -140,6 +140,40 @@
     display: inline-block;
 }
 
+.link-to-live-project {
+    text-decoration: none;
+    display: none;
+    position: absolute;
+    top: 77.5%;
+
+    & h5 {
+        color: var(--body-primary);
+        font-size: var(--font-size-subtitle);
+        letter-spacing: .1em;
+        transition: color .35s ease-in-out;
+    
+     &:hover {
+        color: var(--primary-accent);
+    }
+
+    }
+
+     & .pop-up-link-underline {
+        position: absolute;
+        top: 135%;
+        left: 0%;
+        width: 0%;
+        color: red;
+        height: 1px;
+        background-color: var(--primary-accent);
+        transition: width .75s ease-in-out;
+    }     
+}
+
+.link-to-live-project:hover .pop-up-link-underline {
+    width: 100%;
+} 
+
 // Media Queries
 // For larger screens
 @media screen and (min-width: 500px) {
