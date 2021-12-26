@@ -585,6 +585,9 @@ hr {
   font-size: var(--github-project-link);
   font-style: italic;
 }
+.code-clan-project-item .fa-github {
+  color: var(--primary-accent);
+}
 
 #code-clan-project-padding-overide {
   padding-bottom: 0.6em;
@@ -723,7 +726,7 @@ hr {
 
 .pop-up-index-button-active {
   color: var(--primary-accent);
-  transform: rotate(180deg) translateY(20px) !important;
+  transform: rotate(180deg) translateY(-10px) !important;
   transition: transform 0.2s ease-in-out;
 }
 

@@ -36,9 +36,6 @@ document.querySelectorAll(".show-contact-details").forEach(element =>  {
     });
 });
 
-
-
-
 // Footer section
 // Add event listner to show pop up index section
 

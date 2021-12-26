@@ -53,6 +53,10 @@
     font-size: var(--github-project-link);
     font-style: italic;
   }
+
+  & .fa-github {
+    color: var(--primary-accent);
+  }
 }
 
 #code-clan-project-padding-overide {
