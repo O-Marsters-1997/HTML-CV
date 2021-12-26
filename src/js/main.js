@@ -56,43 +56,40 @@ document.querySelector("#pop-up-index-button").addEventListener('click', (e) => 
     revealPopUpSection()
 })
 
+/*==================== scale-pdf ====================*/ 
 
-/*==================== DOWNLOAD PDF ON SMALL SCREEN ====================*/ 
+const scale = async ()=> {
+    body = document.querySelector("body");
+    body.classList.add("scale-cv")
+}
 
-// const anchor = document.getElementById("resume-button-small");
-
-// const pdfDownload = (path, filename) => {
-//     anchor.href = path
-//     anchor.download = filename
-// }
-
-// anchor.addEventListener('click', (e) => {
-//     pdfDownload('../olly.pdf', 'olly.pdf')
-// })
+const unscale = async () => {
+  body = document.querySelector("body");
+  body.classList.remove("scale-cv");
+};
 
 /*==================== GENERATE PDF ====================*/ 
 // PDF generated area
 
 let areaCv = document.getElementById('id')
-
 let resumeButton = document.getElementById("resume-button")
 
 
 // Html2pdf options
 
 // Function to call areaCv and Html2Pdf options 
-function generateResume() {
-    html2pdf(areaCv)
+async function generateResume() {
+    scale();
+    await html2pdf(areaCv)
+    unscale()
 }
 
 // When the button is clicked, it executes the three functions
 resumeButton.addEventListener('click', () => {
     // 1. The class .scale-cv is added to the body, where it reduces the size of the elements
     // scaleCV()
-
     // 2. The PDF is generated
     generateResume()
-
     // 3. The .scale-cv class is removed from the body after 5 seconds to return to normal size.
 })
 
