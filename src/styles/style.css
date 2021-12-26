@@ -243,6 +243,7 @@ i {
 }
 .scale-cv .link-to-live-project {
   display: block;
+  color: white;
 }
 .scale-cv .profile-section {
   margin-left: -1.378rem;
@@ -382,12 +383,13 @@ i {
   display: none;
   position: absolute;
   top: 77.5%;
+  letter-spacing: 0.1em;
+  color: black !important;
+  transition: color 0.75s ease-in-out;
 }
 .link-to-live-project h5 {
-  color: var(--body-primary);
-  font-size: var(--font-size-subtitle);
-  letter-spacing: 0.1em;
-  transition: color 0.35s ease-in-out;
+  font-variant: small-caps;
+  font-size: calc(var(--font-size-subtitle) * 1.1);
 }
 .link-to-live-project h5:hover {
   color: var(--primary-accent);
