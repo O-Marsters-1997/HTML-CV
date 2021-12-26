@@ -61,7 +61,7 @@
                     position: relative;
                     text-decoration: none;
                     font-family: $repo-links;
-                    font-size: .7rem;
+                    font-size: var(--font-size-subtitle);
                     text-transform: capitalize;
                 
                      & .pop-up-link-underline {

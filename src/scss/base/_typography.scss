@@ -19,6 +19,8 @@ h2, h5, i {
 h3 {
     color: var(--primary-accent);
     font-variant: small-caps;
+    font-size: var(--section-title);
+    letter-spacing: 0.1em !important;
 }
 
 h4 {
@@ -35,6 +37,5 @@ a, p, ul li, ul li + li {
     font-family: $body-text;
     color: var(--body-primary);
     font-size: var(--font-size-body);
-    // @include scale-font($font-size-body, $font-multiplier);
 }
 

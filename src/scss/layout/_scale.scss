@@ -3,10 +3,15 @@
 .scale-cv {
     --font-scale: #{$font-multiplier-scale};
     --font-size-body: calc(#{$font-size-body} * var(--font-scale));
+    --section-title: calc(#{$font-size-section-title} * var(--font-scale));
     --font-size-subtitle: calc(#{$font-size-subtitle} * var(--font-scale));
     --font-size-sub-alt: calc(#{$font-size-sub-alt} * var(--font-scale));
     --experience-item-title: calc(#{$experience-item-title} * var(--font-scale));
     --github-project-link: calc(#{$github-project-link} * var(--font-scale));
+    --cv-name-size: calc(#{$cv-name-size} * var(--font-scale));
+    --cv-title-size: calc(#{$cv-title-size} * var(--font-scale));
+    --interest-icon-size: calc(#{$interest-icon-size} * var(--font-scale));
+    --work-details-size: calc(#{$work-details-size} * var(--font-scale));
 }
 
 .scale-cv #id {

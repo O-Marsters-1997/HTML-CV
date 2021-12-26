@@ -9,8 +9,3 @@
 @mixin border-left-section {
     border-right: 1px solid var(--body-primary);
 }
-
-// // Mixin for adjusting font-size 
-// @mixin scale-font($font-size, $modifier) {
-//     font-size: #{$font-size * $modifier};
-// }

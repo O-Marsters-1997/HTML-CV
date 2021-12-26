@@ -27,13 +27,21 @@ $body-text: "Open-sans-light";
 // Font-sizes
 // This is a modifier multiplier that will be applied to uniformaly upsize all fonts on scale cv class.
 $font-multiplier: 1;
-$font-multiplier-scale: 2;
+$font-multiplier-scale: 1.65;
 
 $font-size-body: 8.5px;
+$font-size-section-title: 1.2rem;
 $font-size-subtitle: .7em;
 $font-size-sub-alt: .6em;
 $experience-item-title: .5em;
 $github-project-link: .4em;
+$work-details-size: .525rem;
+
+$cv-name-size: 1.85rem;
+$cv-title-size: 1.15rem;
+
+// Icon sizes
+$interest-icon-size: 1.4em;
 
 
 // Spacings

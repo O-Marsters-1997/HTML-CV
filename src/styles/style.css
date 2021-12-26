@@ -30,6 +30,8 @@ h2, h5, i {
 h3 {
   color: var(--primary-accent);
   font-variant: small-caps;
+  font-size: var(--section-title);
+  letter-spacing: 0.1em !important;
 }
 
 h4 {
@@ -137,10 +139,15 @@ a, p, ul li, ul li + li {
   --body-primary: #111111;
   --font-scale: 1;
   --font-size-body: calc(8.5px * var(--font-scale));
+  --section-title: calc(1.2rem * var(--font-scale));
   --font-size-subtitle: calc(0.7em * var(--font-scale));
   --font-size-sub-alt: calc(0.6em * var(--font-scale));
   --experience-item-title: calc(0.5em * var(--font-scale));
   --github-project-link: calc(0.4em * var(--font-scale));
+  --cv-name-size: calc(1.85rem * var(--font-scale));
+  --cv-title-size: calc(1.15rem * var(--font-scale));
+  --interest-icon-size: calc(1.4em * var(--font-scale));
+  --work-details-size: calc(0.525rem * var(--font-scale));
 }
 
 .dark-theme {
@@ -203,12 +210,17 @@ a, p, ul li, ul li + li {
 }
 
 .scale-cv {
-  --font-scale: 2;
+  --font-scale: 1.65;
   --font-size-body: calc(8.5px * var(--font-scale));
+  --section-title: calc(1.2rem * var(--font-scale));
   --font-size-subtitle: calc(0.7em * var(--font-scale));
   --font-size-sub-alt: calc(0.6em * var(--font-scale));
   --experience-item-title: calc(0.5em * var(--font-scale));
   --github-project-link: calc(0.4em * var(--font-scale));
+  --cv-name-size: calc(1.85rem * var(--font-scale));
+  --cv-title-size: calc(1.15rem * var(--font-scale));
+  --interest-icon-size: calc(1.4em * var(--font-scale));
+  --work-details-size: calc(0.525rem * var(--font-scale));
 }
 
 .scale-cv #id {
@@ -238,12 +250,12 @@ a, p, ul li, ul li + li {
 }
 .title-wrapper .cv-name {
   letter-spacing: 0.22em;
-  font-size: 1.85rem;
+  font-size: var(--cv-name-size);
 }
 .title-wrapper .cv-title {
   font-variant: small-caps;
   letter-spacing: 0.1em;
-  font-size: 1.15rem;
+  font-size: var(--cv-title-size);
   padding-top: 0.35rem;
 }
 
@@ -442,7 +454,7 @@ a, p, ul li, ul li + li {
 }
 
 .education-section-item .section-subtitle {
-  font-size: 0.6em;
+  font-size: var(--font-size-subtitle);
 }
 
 .education-institution, .education-results {
@@ -550,7 +562,7 @@ hr {
 .work-experience-details {
   text-transform: uppercase;
   margin: 0.415rem 0;
-  font-size: 0.525rem;
+  font-size: var(--work-details-size);
   letter-spacing: 0.1em;
 }
 
@@ -587,7 +599,7 @@ hr {
 
 .interests-item i {
   color: var(--primary-accent);
-  font-size: 1.4em;
+  font-size: var(--interest-icon-size);
 }
 
 #cooking i:first-child {
@@ -651,7 +663,7 @@ hr {
   position: relative;
   text-decoration: none;
   font-family: "Montserrat-light";
-  font-size: 0.7rem;
+  font-size: var(--font-size-subtitle);
   text-transform: capitalize;
 }
 .pop-up-index-wrapper .pop-up-index-nav .pop-up-index-list .pop-up-index-item a .pop-up-link-underline {
