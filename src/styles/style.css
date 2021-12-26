@@ -5,7 +5,7 @@
   line-height: 1em;
 }
 
-body {
+body, html {
   background-color: #2e2b2b;
 }
 
@@ -194,6 +194,11 @@ a, p, ul li, ul li + li {
 
 .code-clan-project-tech-stack {
   font-style: italic;
+}
+
+.scale-cv #id {
+  width: 210mm;
+  height: 297mm;
 }
 
 @keyframes slidein {
@@ -501,7 +506,7 @@ hr {
 }
 .code-clan-project-item-wrapper .code-clan-project-description-list {
   margin-left: 1.378rem;
-  margin-right: 0.689rem;
+  margin-right: calc($mr / 2);
 }
 .code-clan-project-item-wrapper .code-clan-project-description-list .code-clan-project-description-item {
   line-height: 1.5em;

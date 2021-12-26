@@ -35,7 +35,7 @@
   }
   & .code-clan-project-description-list {
     margin-left: $ml;
-    margin-right: $mr / 2;
+    margin-right: calc($mr / 2);
 
     & .code-clan-project-description-item {
       line-height: $body-lh;
