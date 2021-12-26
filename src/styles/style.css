@@ -179,7 +179,7 @@ a, p, ul li, ul li + li {
 
 .section-subtitle {
   padding: 0.5em 0;
-  font-size: 0.7em;
+  font-size: calc(.7em * $font-multiplier);
   line-height: 1.5em;
   color: var(--body-primary);
 }

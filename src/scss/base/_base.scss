@@ -22,10 +22,12 @@ $repo-links: "Montserrat-light";
 $body-text: "Open-sans-light";
 
 // Font-sizes
-$font-size-subtitle: .7em;
+$font-multiplier: 1;
+
+$font-size-subtitle: calc(.7em * $font-multiplier);
 $font-size-sub-alt: .6em;
 $experience-item-title: .5em;
-$github-project-link: .4em;
+$github-project-link: #{$font-multiplier * .4em};
 
 
 // Spacings

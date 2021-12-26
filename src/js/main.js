@@ -89,7 +89,7 @@ resumeButton.addEventListener('click', () => {
     // 1. The class .scale-cv is added to the body, where it reduces the size of the elements
     // scaleCV()
     // 2. The PDF is generated
-    generateResume()
+    // generateResume()
     // 3. The .scale-cv class is removed from the body after 5 seconds to return to normal size.
 })
 
