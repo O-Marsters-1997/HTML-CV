@@ -145,7 +145,7 @@ i {
   --background-primary: #f7f5f5;
   --primary-accent: #87abd4;
   --header-primary: #070707;
-  --body-primary: #161616;
+  --body-primary: #1b1b1b;
   --borders: #a3a3a3;
   --font-scale: 1;
   --font-size-body: calc(8.5px * var(--font-scale));
@@ -162,11 +162,11 @@ i {
 }
 
 .dark-theme {
-  --background-primary: black;
-  --primary-accent: #eba834;
+  --background-primary: #353535;
+  --primary-accent: #b67e1d;
   --header-primary: #f7f5f5;
-  --body-primary: white;
-  --borders: #4e4e4e;
+  --body-primary: #dfdede;
+  --borders: #8b8b8b;
 }
 
 .pdf-wrapper {
@@ -699,7 +699,7 @@ hr {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  border-top: 0.1px solid #161616;
+  border-top: 0.1px solid #1b1b1b;
   border-radius: 10px;
 }
 .pop-up-index-wrapper .pop-up-index-nav .pop-up-index-list .pop-up-index-item {
