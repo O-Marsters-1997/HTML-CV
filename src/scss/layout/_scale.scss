@@ -1,6 +1,9 @@
 @use '../base/' as *;
 
 .scale-cv {
+
+    // Root stylings for scale cv
+
     --font-scale: #{$font-multiplier-scale};
     --font-size-body: calc(#{$font-size-body} * var(--font-scale));
     --section-title: calc(#{$font-size-section-title} * var(--font-scale));
@@ -13,9 +16,23 @@
     --interest-icon-size: calc(#{$interest-icon-size} * var(--font-scale));
     --icon-deault-size: calc(#{$icon-deault-size} * var(--font-scale));
     --work-details-size: calc(#{$work-details-size} * var(--font-scale));
+
+    // Capping size of the major feature of page to pdf size
+    & .pdf-wrapper {
+        position: relative;
+        margin: 0 calc(50% - (210mm/2));
+        width:  210mm;
+        height: 297mm;
+
+        & #id {
+            width:  210mm;
+            height: 297mm;
+        }
+    }
+
+    & .left-border-wrapper {
+        width: 250px;
+    }
 }
 
-.scale-cv #id {
-    width:  210mm;
-    height: 297mm;
-}
+
