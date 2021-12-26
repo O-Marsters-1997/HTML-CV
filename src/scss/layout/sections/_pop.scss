@@ -66,11 +66,11 @@
                 
                      & .pop-up-link-underline {
                         position: absolute;
-                        top: 100%;
+                        top: 120%;
                         left: 0%;
                         width: 0%;
                         height: 1px;
-                        background-color: $primary-accent;
+                        background-color: var(--primary-accent);
                         transition: width 400ms ease-in;
                     }
                 }

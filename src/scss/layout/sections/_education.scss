@@ -20,6 +20,11 @@
 
 .education-section-item .section-subtitle {
     font-size: var(--font-size-subtitle);
+
+    & .no-small-caps {
+        font-size: .525rem;
+        // color: red;
+    }
 }
 
 .education-institution, .education-results {
@@ -31,7 +36,6 @@
 }
 
 // Media queries
-
 // For larger screens
 @media screen and (min-width: 500px) {
     .education-interests-section {

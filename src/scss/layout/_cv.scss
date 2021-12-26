@@ -53,29 +53,3 @@
 }
 
 
-// Right column
-
-// Profile section
-
-.profile-section {
-    @include border-bottom-subsection;
-}
-
-// Technical qualifications section
-
-.technical-qualifications-section {
-    @include border-bottom-subsection;
-}
-
-.code-clan-project-tech-stack {
-    font-style: italic;
-}
-
-// Media queries
-// For larger screens
-
-@media screen and (min-width: 500px) {
-    #id {
-    
-    }
-}

@@ -1,4 +1,5 @@
 @use '../base/' as *;
+@use '../abstracts/' as *;
 
 .scale-cv {
 
@@ -32,6 +33,43 @@
     & .left-border-wrapper {
         width: 250px;
     }
+
+    // Profile section
+    & .profile-section {
+        margin-left: -$ml;
+        margin-top: -.2368em;
+        @include border-bottom-subsection;
+        height: 9.382em;
+    }
+    // Technical section
+
+    & .technical-qualifications-section {
+        margin-top: -15em;
+
+        & .code-clan-project-item-wrapper {
+            // background-color: rgb(243, 242, 242);
+            padding-bottom: .8em;
+            
+        }
+    }
+
+    & .education-section {
+
+    
+        & .no-small-caps:first-child {
+            font-size: .735em;
+        }
+    }
+
+    & .work-experience-section {
+        margin-top: 0.7em;
+    }
+
+    // Work expereince section
+    .work-experience-item {
+        padding-bottom: .6em;
+    }
 }
+
 
 
