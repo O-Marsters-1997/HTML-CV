@@ -578,6 +578,10 @@ i {
   margin-top: 0.5em;
 }
 
+.profile-description {
+  line-height: 1.6em !important;
+}
+
 hr {
   margin-top: 200px;
 }
