@@ -12,7 +12,7 @@ const revealContactDetails = () => {
     if (contactDetails.classList.contains('contact-hidden')){
             contactDetails.classList.remove('contact-hidden')
             header.classList.add('header-max-height')
-            header.classList.add('header-max-height')
+            header.classList.add("header-no-border");
             showContactDetails.classList.add('show-contact-details-active')
             iconWrap.classList.add("header-icon-wrapper-extra");
         } else {
@@ -24,6 +24,7 @@ const revealContactDetails = () => {
             })
             contactDetails.classList.add('contact-hidden')
             header.classList.remove('header-max-height')
+            header.classList.remove("header-no-border");
             showContactDetails.classList.remove('show-contact-details-active')
             iconWrap.classList.remove("header-icon-wrapper-extra");
         }

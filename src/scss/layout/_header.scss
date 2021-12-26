@@ -24,6 +24,12 @@
     @include border-bottom-subsection;
 }
 
+// class for having no border
+.header-no-border {
+    border: none !important;
+    padding-bottom: 2.5rem;
+}
+
 // Name details
 .title-wrapper {
     margin-top: 1.5rem;
@@ -188,13 +194,18 @@
     .contact-wrapper {
         margin-left: 0%;
     }
+
+    .header-icon-wrapper {
+        right: 0%;
+    }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 350px) {
+    
     .header-max-height {
         height: 12.457rem;
     }
     .header-icon-wrapper {
-        top: 100% !important;
+        top: 10% !important;
     }
 }

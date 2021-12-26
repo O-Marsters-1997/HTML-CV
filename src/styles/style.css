@@ -259,6 +259,11 @@ i {
   border-bottom: 0.1px solid var(--body-primary);
 }
 
+.header-no-border {
+  border: none !important;
+  padding-bottom: 2.5rem;
+}
+
 .title-wrapper {
   margin-top: 1.5rem;
 }
@@ -397,14 +402,18 @@ i {
   .contact-wrapper {
     margin-left: 0%;
   }
+
+  .header-icon-wrapper {
+    right: 0%;
+  }
 }
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 350px) {
   .header-max-height {
     height: 12.457rem;
   }
 
   .header-icon-wrapper {
-    top: 100% !important;
+    top: 10% !important;
   }
 }
 .skills-section {

@@ -3,7 +3,6 @@
 .scale-cv {
 
     // Root stylings for scale cv
-
     --font-scale: #{$font-multiplier-scale};
     --font-size-body: calc(#{$font-size-body} * var(--font-scale));
     --section-title: calc(#{$font-size-section-title} * var(--font-scale));
