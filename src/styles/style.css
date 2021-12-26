@@ -43,7 +43,7 @@ h5 {
 a, p, ul li, ul li + li {
   font-family: "Open-sans-light";
   color: var(--body-primary);
-  font-size: 8.5px;
+  font-size: calc(8.5px * var(--font-scale));
 }
 
 /* montserrat-100 - latin */
@@ -135,6 +135,7 @@ a, p, ul li, ul li + li {
   --primary-accent: #8e9fcf;
   --header-primary: black;
   --body-primary: #111111;
+  --font-scale: 1;
 }
 
 .dark-theme {
@@ -179,7 +180,7 @@ a, p, ul li, ul li + li {
 
 .section-subtitle {
   padding: 0.5em 0;
-  font-size: calc(.7em * $font-multiplier);
+  font-size: 0.7em;
   line-height: 1.5em;
   color: var(--body-primary);
 }
@@ -194,6 +195,10 @@ a, p, ul li, ul li + li {
 
 .code-clan-project-tech-stack {
   font-style: italic;
+}
+
+.scale-cv {
+  --font-scale: 2;
 }
 
 .scale-cv #id {

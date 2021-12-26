@@ -1,10 +1,15 @@
 @use './base' as *;
 
 :root {
+    // Colour scheme
     --background-primary: #{$background-primary};
     --primary-accent: #{$primary-accent};
     --header-primary: #{$header-primary};
     --body-primary: #{$body-primary};
+
+
+    // Rule for scaling font-sizes base. other is in scale.scss
+    --font-scale: #{$font-multiplier};
 }
 
 .dark-theme {
@@ -13,3 +18,4 @@
     --header-primary: #{$header-primary-dark};
     --body-primary: #{$body-primary-dark};
 }
+

@@ -1,4 +1,4 @@
-@use '../base/' as *;
+// @use '../base/' as *;
 
 // Mixin for bottom borders
 @mixin border-bottom-subsection {
@@ -9,3 +9,8 @@
 @mixin border-left-section {
     border-right: 1px solid var(--body-primary);
 }
+
+// // Mixin for adjusting font-size 
+// @mixin scale-font($font-size, $modifier) {
+//     font-size: #{$font-size * $modifier};
+// }
