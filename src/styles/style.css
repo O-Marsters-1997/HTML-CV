@@ -147,6 +147,7 @@ i {
   --header-primary: #070707;
   --body-primary: #1b1b1b;
   --borders: #a3a3a3;
+  --borders-muted: lightgray;
   --font-scale: 1;
   --font-size-body: calc(8.5px * var(--font-scale));
   --section-title: calc(1.2rem * var(--font-scale));
@@ -167,6 +168,7 @@ i {
   --header-primary: #f7f5f5;
   --body-primary: #dfdede;
   --borders: #8b8b8b;
+  --borders-muted: #505050;
 }
 
 .pdf-wrapper {
@@ -699,7 +701,7 @@ hr {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  border-top: 0.1px solid #1b1b1b;
+  border-top: 0.1px solid var(--borders-muted);
   border-radius: 10px;
 }
 .pop-up-index-wrapper .pop-up-index-nav .pop-up-index-list .pop-up-index-item {

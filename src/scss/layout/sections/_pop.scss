@@ -46,7 +46,7 @@
             display: grid;
             // background-color: red;
             grid-template-columns: repeat(12, 1fr);
-            border-top: .1px solid $body-primary;
+            border-top: .1px solid var(--borders-muted);
             border-radius: 10px;
             
 

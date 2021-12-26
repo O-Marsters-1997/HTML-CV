@@ -7,6 +7,7 @@
     --header-primary: #{$header-primary};
     --body-primary: #{$body-primary};
     --borders: #{$borders};
+    --borders-muted: #{$borders-muted};
 
 
     // Rule for scaling font-sizes base. other is in scale.scss
@@ -30,5 +31,6 @@
     --header-primary: #{$header-primary-dark};
     --body-primary: #{$body-primary-dark};
     --borders: #{$borders-dark};
+    --borders-muted: #{$borders-muted-dark};
 }
 
