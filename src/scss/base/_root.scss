@@ -6,6 +6,7 @@
     --primary-accent: #{$primary-accent};
     --header-primary: #{$header-primary};
     --body-primary: #{$body-primary};
+    --borders: #{$borders};
 
 
     // Rule for scaling font-sizes base. other is in scale.scss
@@ -28,5 +29,6 @@
     --primary-accent: #{$primary-accent-dark};
     --header-primary: #{$header-primary-dark};
     --body-primary: #{$body-primary-dark};
+    --borders: #{$borders-dark};
 }
 

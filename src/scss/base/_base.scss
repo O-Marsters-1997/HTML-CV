@@ -5,14 +5,16 @@
 
 // Colour palettte
 
-$background-primary: white;
-$primary-accent: rgba(142, 159, 207, 1);
-$header-primary: black;
-$body-primary: rgba(17, 17, 17, 1);
+$background-primary: rgb(247, 245, 245);
+$primary-accent: rgb(135, 171, 212);
+$header-primary: rgb(7, 7, 7);
+$body-primary: rgb(22, 22, 22);
+$borders: rgb(163, 163, 163);
 $background-primary-dark: black;
 $primary-accent-dark: rgb(235, 168, 52);
-$header-primary-dark: white;
+$header-primary-dark: rgb(247, 245, 245);
 $body-primary-dark: white;
+$borders-dark: rgb(78, 78, 78);
 
 // Typography
 $header-default: "Montserrat";

@@ -12,8 +12,12 @@ h2, h3, h5 {
     font-family: $section-title;
 }
 
-h2, h5, i {
+h2 {
     color: var(--body-primary);
+}
+
+h5, i {
+    color: var(--header-primary);
 }
 
 h3 {
@@ -41,4 +45,5 @@ a, p, ul li, ul li + li {
 
 i {
     font-size: var(--icon-deault-size);
+    color: var(--header-primary);
 }
