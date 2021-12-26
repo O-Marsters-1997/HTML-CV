@@ -10,6 +10,11 @@
 
     // Rule for scaling font-sizes base. other is in scale.scss
     --font-scale: #{$font-multiplier};
+    --font-size-body: calc(#{$font-size-body} * var(--font-scale));
+    --font-size-subtitle: calc(#{$font-size-subtitle} * var(--font-scale));
+    --font-size-sub-alt: calc(#{$font-size-sub-alt} * var(--font-scale));
+    --experience-item-title: calc(#{$experience-item-title} * var(--font-scale));
+    --github-project-link: calc(#{$github-project-link} * var(--font-scale));
 }
 
 .dark-theme {

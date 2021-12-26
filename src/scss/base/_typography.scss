@@ -26,7 +26,7 @@ h4 {
 }
 
 h5 {
-    font-size: $font-size-sub-alt;
+    font-size: var(--font-size-sub-alt);
 }
 
 // Body default typography styles
@@ -34,7 +34,7 @@ h5 {
 a, p, ul li, ul li + li {
     font-family: $body-text;
     color: var(--body-primary);
-    font-size: calc(#{$font-size-body} * var(--font-scale));
+    font-size: var(--font-size-body);
     // @include scale-font($font-size-body, $font-multiplier);
 }
 

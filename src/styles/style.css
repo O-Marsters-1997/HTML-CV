@@ -37,13 +37,13 @@ h4 {
 }
 
 h5 {
-  font-size: 0.6em;
+  font-size: var(--font-size-sub-alt);
 }
 
 a, p, ul li, ul li + li {
   font-family: "Open-sans-light";
   color: var(--body-primary);
-  font-size: calc(8.5px * var(--font-scale));
+  font-size: var(--font-size-body);
 }
 
 /* montserrat-100 - latin */
@@ -136,6 +136,11 @@ a, p, ul li, ul li + li {
   --header-primary: black;
   --body-primary: #111111;
   --font-scale: 1;
+  --font-size-body: calc(8.5px * var(--font-scale));
+  --font-size-subtitle: calc(0.7em * var(--font-scale));
+  --font-size-sub-alt: calc(0.6em * var(--font-scale));
+  --experience-item-title: calc(0.5em * var(--font-scale));
+  --github-project-link: calc(0.4em * var(--font-scale));
 }
 
 .dark-theme {
@@ -180,7 +185,7 @@ a, p, ul li, ul li + li {
 
 .section-subtitle {
   padding: 0.5em 0;
-  font-size: 0.7em;
+  font-size: var(--font-size-subtitle);
   line-height: 1.5em;
   color: var(--body-primary);
 }
@@ -199,6 +204,11 @@ a, p, ul li, ul li + li {
 
 .scale-cv {
   --font-scale: 2;
+  --font-size-body: calc(8.5px * var(--font-scale));
+  --font-size-subtitle: calc(0.7em * var(--font-scale));
+  --font-size-sub-alt: calc(0.6em * var(--font-scale));
+  --experience-item-title: calc(0.5em * var(--font-scale));
+  --github-project-link: calc(0.4em * var(--font-scale));
 }
 
 .scale-cv #id {
@@ -502,7 +512,7 @@ hr {
   text-transform: capitalize;
   padding-bottom: 0.6em;
   letter-spacing: 0.1em;
-  font-size: 0.5em;
+  font-size: var(--experience-item-title);
   padding-bottom: 0.8rem;
 }
 
@@ -524,7 +534,7 @@ hr {
 .code-clan-project-item .code-clan-project-github-link {
   color: var(--primary-accent);
   text-decoration: none;
-  font-size: 0.4em;
+  font-size: var(--github-project-link);
   font-style: italic;
 }
 

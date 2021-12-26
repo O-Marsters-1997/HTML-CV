@@ -24,7 +24,7 @@
     text-transform: capitalize;
     padding-bottom: 0.6em;
     letter-spacing: 0.1em;
-    font-size: $experience-item-title;
+    font-size: var(--experience-item-title);
     padding-bottom: 0.8rem;
   }
 }
@@ -50,7 +50,7 @@
   & .code-clan-project-github-link {
     color: var(--primary-accent);
     text-decoration: none;
-    font-size: $github-project-link;
+    font-size: var(--github-project-link);
     font-style: italic;
   }
 }
