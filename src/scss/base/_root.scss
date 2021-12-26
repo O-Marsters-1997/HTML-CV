@@ -19,6 +19,7 @@
     --cv-name-size: calc(#{$cv-name-size} * var(--font-scale));
     --cv-title-size: calc(#{$cv-title-size} * var(--font-scale));
     --interest-icon-size: calc(#{$interest-icon-size} * var(--font-scale));
+    --icon-deault-size: calc(#{$icon-deault-size} * var(--font-scale));
     --work-details-size: calc(#{$work-details-size} * var(--font-scale));
 }
 

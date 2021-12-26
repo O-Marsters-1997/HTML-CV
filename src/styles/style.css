@@ -48,6 +48,10 @@ a, p, ul li, ul li + li {
   font-size: var(--font-size-body);
 }
 
+i {
+  font-size: var(--icon-deault-size);
+}
+
 /* montserrat-100 - latin */
 @font-face {
   font-family: "Montserrat-lightest";
@@ -147,6 +151,7 @@ a, p, ul li, ul li + li {
   --cv-name-size: calc(1.85rem * var(--font-scale));
   --cv-title-size: calc(1.15rem * var(--font-scale));
   --interest-icon-size: calc(1.4em * var(--font-scale));
+  --icon-deault-size: calc(16px * var(--font-scale));
   --work-details-size: calc(0.525rem * var(--font-scale));
 }
 
@@ -220,6 +225,7 @@ a, p, ul li, ul li + li {
   --cv-name-size: calc(1.85rem * var(--font-scale));
   --cv-title-size: calc(1.15rem * var(--font-scale));
   --interest-icon-size: calc(1.4em * var(--font-scale));
+  --icon-deault-size: calc(16px * var(--font-scale));
   --work-details-size: calc(0.525rem * var(--font-scale));
 }
 
