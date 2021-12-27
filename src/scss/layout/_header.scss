@@ -208,6 +208,9 @@
             color: var(--body-primary) !important;
         }
     }
+}
+
+@media screen and (min-width: 650px) {
     #resume-button {
         display: inline-block;
     }
@@ -216,6 +219,7 @@
         display: none;
     }
 }
+
 
 @media screen and (max-width:555px) {
     .contact-wrapper {

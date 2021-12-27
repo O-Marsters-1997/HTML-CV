@@ -79,7 +79,7 @@ let resumeButton = document.getElementById("resume-button")
 async function generateResume() {
     scale();
     await html2pdf(areaCv)
-    // unscale()
+    unscale()
 }
 
 // When the button is clicked, it executes the three functions

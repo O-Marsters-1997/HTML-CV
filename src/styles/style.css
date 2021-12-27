@@ -438,7 +438,8 @@ i {
   .header-icon-wrapper-extra i {
     color: var(--body-primary) !important;
   }
-
+}
+@media screen and (min-width: 650px) {
   #resume-button {
     display: inline-block;
   }

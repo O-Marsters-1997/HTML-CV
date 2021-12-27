@@ -27,10 +27,6 @@
 
 // Edit this line height depending on paragraph size
 
-.profile-description {
-    // line-height: 1.6em !important;
-}
-
 hr {
     margin-top: 200px;
 }
@@ -45,3 +41,9 @@ hr {
         padding-bottom: -18em;
     }
 }
+
+// @media screen and (max-width: 650px) {
+//     .profile-description {
+//         line-height: 266em !important;
+//     }
+// }
