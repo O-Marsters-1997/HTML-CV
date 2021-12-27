@@ -17,6 +17,7 @@
 .interests-item i {
     color: var(--primary-accent);
     font-size: var(--interest-icon-size);
+    transform: translateY(2.5px);
 }
 
 #cooking i:first-child {
