@@ -52,6 +52,11 @@
     text-decoration: none;
     font-size: var(--github-project-link);
     font-style: italic;
+
+  &:hover {
+    color: var(--primary-accent-alt);
+  }
+  
   }
 
   & .fa-github {

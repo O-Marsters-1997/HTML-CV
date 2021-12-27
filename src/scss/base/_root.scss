@@ -4,10 +4,13 @@
     // Colour scheme
     --background-primary: #{$background-primary};
     --primary-accent: #{$primary-accent};
+    --primary-accent-alt: #{$primary-accent-alt};
     --header-primary: #{$header-primary};
     --body-primary: #{$body-primary};
     --borders: #{$borders};
     --borders-muted: #{$borders-muted};
+
+    
 
 
     // Rule for scaling font-sizes base. other is in scale.scss
@@ -28,6 +31,7 @@
 .dark-theme {
     --background-primary: #{$background-primary-dark};
     --primary-accent: #{$primary-accent-dark};
+      --primary-accent-alt: #{$primary-accent-alt-dark};
     --header-primary: #{$header-primary-dark};
     --body-primary: #{$body-primary-dark};
     --borders: #{$borders-dark};

@@ -144,6 +144,7 @@ i {
 :root {
   --background-primary: #f7f5f5;
   --primary-accent: #87abd4;
+  --primary-accent-alt: #5683b7;
   --header-primary: #070707;
   --body-primary: #1b1b1b;
   --borders: #a3a3a3;
@@ -165,6 +166,7 @@ i {
 .dark-theme {
   --background-primary: #353535;
   --primary-accent: #b67e1d;
+  --primary-accent-alt: #c99438;
   --header-primary: #f7f5f5;
   --body-primary: #dfdede;
   --borders: #8b8b8b;
@@ -631,6 +633,9 @@ hr {
   text-decoration: none;
   font-size: var(--github-project-link);
   font-style: italic;
+}
+.code-clan-project-item .code-clan-project-github-link:hover {
+  color: var(--primary-accent-alt);
 }
 .code-clan-project-item .fa-github {
   color: var(--primary-accent);
