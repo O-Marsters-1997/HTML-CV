@@ -1,8 +1,11 @@
-# Responsive Resume Cv Smith
-## [Watch it on youtube]()
-### Responsive Resume Cv Smith
-Beautiful Responsive resume cv website 📄 using html, css and javascript. Light dark mode 🌗 and PDF export.
+# Responsive CV Olly Marsters
 
-Don't forget to join the channel for more videos like this. [Bedimcode](https://www.youtube.com/c/Bedimcode)
+This is a digital version of my cv made using HTML, SCSS and Javascript.
+It is fully reponsive and dynamic.
 
-![Resume cv](/preview.png)
+## Features
+
+- Fully responsive for mobile or small screens.
+- Pop up navigation section with scroll effect to relevant sections for small devices.
+- Dark theme toggle button.
+- PDF generator to allow users to download a pdf version of the cv on their local devices.
