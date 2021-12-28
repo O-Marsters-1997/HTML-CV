@@ -21,7 +21,6 @@
     justify-content: start;
     margin: 0 1.5em .71em 1.5em;
     padding-bottom: 1.65rem;
-    @include border-bottom-subsection;
 }
 
 // class for having no border
@@ -182,6 +181,7 @@
     
     .header {
         display: flex;
+        @include border-bottom-subsection;
     }
     
     .contact-wrapper {

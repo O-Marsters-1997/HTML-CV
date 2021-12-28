@@ -283,7 +283,6 @@ i {
   justify-content: start;
   margin: 0 1.5em 0.71em 1.5em;
   padding-bottom: 1.65rem;
-  border-bottom: 0.75px solid var(--borders);
 }
 
 .header-no-border {
@@ -414,6 +413,7 @@ i {
 @media screen and (min-width: 500px) {
   .header {
     display: flex;
+    border-bottom: 0.75px solid var(--borders);
   }
 
   .contact-wrapper {
