@@ -282,7 +282,7 @@ i {
   height: 100%;
   justify-content: start;
   margin: 0 1.5em 0.71em 1.5em;
-  padding-bottom: 1.65rem;
+  padding-bottom: 2.45rem;
 }
 
 .header-no-border {
@@ -671,6 +671,9 @@ hr {
     margin-left: 2.756rem;
     grid-column: 5/-1;
     margin-top: -11.75em;
+  }
+  .technical-qualifications-section .section-title {
+    margin-top: -1.25rem;
   }
 }
 @media screen and (min-width: 600px) {

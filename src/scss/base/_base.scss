@@ -1,5 +1,5 @@
 // Imports
-@use '../abstracts/' as *;
+@use "../abstracts/" as *;
 
 // Root stylings are here
 
@@ -37,11 +37,11 @@ $font-multiplier-scale: 1.3;
 
 $font-size-body: 8.5px;
 $font-size-section-title: 1.2rem;
-$font-size-subtitle: .7em;
-$font-size-sub-alt: .6em;
-$experience-item-title: .5em;
-$github-project-link: .4em;
-$work-details-size: .525rem;
+$font-size-subtitle: 0.7em;
+$font-size-sub-alt: 0.6em;
+$experience-item-title: 0.5em;
+$github-project-link: 0.4em;
+$work-details-size: 0.525rem;
 
 $cv-name-size: 1.85rem;
 $cv-title-size: 1.15rem;
@@ -51,7 +51,7 @@ $icon-deault-size: 16px;
 $interest-icon-size: 1.4em;
 
 // Spacings
-$section-title-spacing: .2em;
+$section-title-spacing: 0.2em;
 $section-title-lh: 1.5em;
 $body-lh: 1.5em;
 $longer-lh: 2em;
@@ -59,3 +59,5 @@ $longer-lh: 2em;
 // Margins
 $ml: 1.378rem;
 $mr: 1.378rem;
+
+
